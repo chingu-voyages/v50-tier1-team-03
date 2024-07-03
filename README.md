@@ -34,7 +34,7 @@ Everyone on your team should add their name along with a link to their GitHub
 your repo access and to practice PR'ing with your team *before* you start
 coding!
 
-- Teammate name #1: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Micha Rodriguez: [GitHub](https://github.com/michaella23) / [LinkedIn](https://linkedin.com/in/michaella-rodriguez)
 - Teammate name #2: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Dylan Mullarkey: [GitHub](https://github.com/dylanmullarkey) / [LinkedIn](https://www.linkedin.com/in/dylanmullarkey/)
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
