@@ -39,7 +39,7 @@ coding!
 - Dylan Mullarkey: [GitHub](https://github.com/dylanmullarkey) / [LinkedIn](https://www.linkedin.com/in/dylanmullarkey/)
 - Mike Brindley: [GitHub](https://github.com/mikebrindley) / [LinkedIn](https://www.linkedin.com/in/brindley/)
 - Sally Qiao: [GitHub](https://github.com/QH89) / [LinkedIn](https://www.linkedin.com/in/hui-qiao-17a8a7298/)
-- Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Marie Joseph: [GitHub](https://github.com/mari618) / [LinkedIn](https://www.linkedin.com/in/m-joseph-/)
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 
