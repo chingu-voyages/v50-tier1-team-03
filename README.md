@@ -35,7 +35,7 @@ your repo access and to practice PR'ing with your team *before* you start
 coding!
 
 ### UX/UI Designers
-- Radhika: [GitHub](https://github.com/goldilocks0164) / [LinkedIn](https://www.linkedin.com/in/radhika-godla-81335166)
+- Adrienne Burney: [GitHub](https://github.com/Adrienne-B) / [LinkedIn](https://www.linkedin.com/in/adrienne-burney-ux-ui-designer/)
 - Radhika: [GitHub](https://github.com/goldilocks0164) / [LinkedIn](https://www.linkedin.com/in/radhika-godla-81335166)
   
  ### Developers
