@@ -41,7 +41,7 @@ coding!
 - Mike Brindley: [GitHub](https://github.com/mikebrindley) / [LinkedIn](https://www.linkedin.com/in/brindley/)
 - Marie Joseph: [GitHub](https://github.com/mari618) / [LinkedIn](https://www.linkedin.com/in/m-joseph-/)
     
-### UX/UI Designers
+### UX/UI Designer
 - Adrienne Burney: [GitHub](https://github.com/Adrienne-B) / [LinkedIn](https://www.linkedin.com/in/adrienne-burney-ux-ui-designer/)
 
  ### Developers
