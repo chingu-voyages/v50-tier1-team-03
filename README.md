@@ -34,16 +34,20 @@ Everyone on your team should add their name along with a link to their GitHub
 your repo access and to practice PR'ing with your team *before* you start
 coding!
 
-### UX/UI Designers
-- Adrienne Burney: [GitHub](https://github.com/Adrienne-B) / [LinkedIn](https://www.linkedin.com/in/adrienne-burney-ux-ui-designer/)
+### Product Owner
 - Radhika: [GitHub](https://github.com/goldilocks0164) / [LinkedIn](https://www.linkedin.com/in/radhika-godla-81335166)
   
+### Scrum Masters
+- Mike Brindley: [GitHub](https://github.com/mikebrindley) / [LinkedIn](https://www.linkedin.com/in/brindley/)
+- Marie Joseph: [GitHub](https://github.com/mari618) / [LinkedIn](https://www.linkedin.com/in/m-joseph-/)
+    
+### UX/UI Designers
+- Adrienne Burney: [GitHub](https://github.com/Adrienne-B) / [LinkedIn](https://www.linkedin.com/in/adrienne-burney-ux-ui-designer/)
+
  ### Developers
 - Micha Rodriguez: [GitHub](https://github.com/michaella23) / [LinkedIn](https://linkedin.com/in/michaella-rodriguez)
 - Dylan Mullarkey: [GitHub](https://github.com/dylanmullarkey) / [LinkedIn](https://www.linkedin.com/in/dylanmullarkey/)
-- Mike Brindley: [GitHub](https://github.com/mikebrindley) / [LinkedIn](https://www.linkedin.com/in/brindley/)
 - Sally Qiao: [GitHub](https://github.com/QH89) / [LinkedIn](https://www.linkedin.com/in/hui-qiao-17a8a7298/)
-- Marie Joseph: [GitHub](https://github.com/mari618) / [LinkedIn](https://www.linkedin.com/in/m-joseph-/)
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 
