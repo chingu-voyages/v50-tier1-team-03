@@ -34,8 +34,12 @@ Everyone on your team should add their name along with a link to their GitHub
 your repo access and to practice PR'ing with your team *before* you start
 coding!
 
+### UX/UI Designers
+- Radhika: [GitHub](https://github.com/goldilocks0164) / [LinkedIn](https://www.linkedin.com/in/radhika-godla-81335166)
 - Radhika: [GitHub](https://github.com/goldilocks0164) / [LinkedIn](https://www.linkedin.com/in/radhika-godla-81335166)
 - Micha Rodriguez: [GitHub](https://github.com/michaella23) / [LinkedIn](https://linkedin.com/in/michaella-rodriguez)
+
+ ### Developers
 - Dylan Mullarkey: [GitHub](https://github.com/dylanmullarkey) / [LinkedIn](https://www.linkedin.com/in/dylanmullarkey/)
 - Mike Brindley: [GitHub](https://github.com/mikebrindley) / [LinkedIn](https://www.linkedin.com/in/brindley/)
 - Sally Qiao: [GitHub](https://github.com/QH89) / [LinkedIn](https://www.linkedin.com/in/hui-qiao-17a8a7298/)
