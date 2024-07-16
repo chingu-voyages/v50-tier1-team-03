@@ -1,15 +1,19 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import menu from "../menu.json"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const meals = menu.meals 
+  const bbqItems = meals.map((item) => {
+    if (item.category.includes("bbq")) {
+      return (
+        <img src={item.image} alt={item.name} className="menu-img" />
+      )       
+    }
+  })
 
   return (
     <>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      {bbqItems}
     </>
   )
 }
