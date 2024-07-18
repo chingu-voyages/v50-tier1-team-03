@@ -8,7 +8,7 @@ function App() {
     if (item.category.includes("bbq")) {
       return (
         <div className="flex menu-item-card">
-        <div>
+        <div className="item-info">
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>{item.price}</p>
