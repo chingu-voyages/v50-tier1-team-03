@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import menu from "../menu.json"
+import Section from "./components/Section"
 
 function App() {
   const meals = menu.meals 
@@ -13,7 +14,30 @@ function App() {
 
   return (
     <>
-      {bbqItems}
+    {/* <Header /> */}
+    <main>
+      <Section 
+        className="meals-section" 
+        heading="BBQ Meals"
+        content={bbqItems}
+      />
+      <Section 
+        className="sides-section" 
+        heading="Sides"
+        // content={sideItems}
+      />
+      <Section 
+        className="drinks-section" 
+        heading="Drinks"
+        // content={drinks}
+      />
+      <Section 
+        className="desserts-section" 
+        heading="Desserts"
+        // content={desserts}
+      />
+    </main>
+    {/* <Footer /> */}
     </>
   )
 }
