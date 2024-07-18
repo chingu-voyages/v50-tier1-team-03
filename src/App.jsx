@@ -1,7 +1,8 @@
 // import { useState } from 'react'
 import menu from "../menu.json"
+import Navbar from "./components/Navbar"
 
-function App() {
+export default function App() {
   const meals = menu.meals 
   const bbqItems = meals.map((item) => {
     if (item.category.includes("bbq")) {
@@ -13,9 +14,8 @@ function App() {
 
   return (
     <>
+    <Navbar/>
       {bbqItems}
     </>
   )
 }
-
-export default App
