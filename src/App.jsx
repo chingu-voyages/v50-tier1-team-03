@@ -7,7 +7,14 @@ function App() {
   const bbqItems = meals.map((item) => {
     if (item.category.includes("bbq")) {
       return (
-        <img src={item.image} alt={item.name} className="menu-img" />
+        <div className="flex menu-item-card">
+        <div className="item-info">
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <p>{item.price}</p>
+          </div>
+          <img src={item.image} alt={item.name} className="menu-img" />
+        </div>
       )       
     }
   })
