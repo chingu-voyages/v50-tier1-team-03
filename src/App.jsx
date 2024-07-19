@@ -1,6 +1,8 @@
 // import { useState } from 'react'
 import menu from "../menu.json"
+import Footer from "./components/Footer.jsx"
 import Section from "./components/Section"
+
 
 function App() {
   const meals = menu.meals 
@@ -44,7 +46,8 @@ function App() {
         // content={desserts}
       />
     </main>
-    {/* <Footer /> */}
+          <Footer />
+
     </>
   )
 }
