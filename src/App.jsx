@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import menu from "../menu.json"
+import Footer from "./components/Footer.jsx"
 
 function App() {
   const meals = menu.meals 
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       {bbqItems}
+      <Footer />
     </>
   )
 }
