@@ -6,7 +6,8 @@ import Section from "./components/Section"
 
 function App() {
   const meals = menu.meals 
-  const drinks = menu.drinks
+  const drinks = menu.drinks.slice(-6,-1)
+  const desserts = menu.desserts.slice(0,6)
 
   const sideItems = meals.map((item) => {
     if (item.category.includes("side")) {
@@ -51,6 +52,19 @@ function App() {
     ) 
   })
 
+  const dessertItems = desserts.map((item) => {
+    return (
+      <div className="flex menu-item-card">
+      <div className="item-info">
+          <h3>{item.name}</h3>
+          <p>{item.description}</p>
+          <p>{item.price}</p>
+        </div>
+        <img src={item.image} alt={item.name} className="menu-img" />
+      </div>
+    ) 
+  })
+
   return (
     <>
     {/* <Header /> */}
@@ -73,7 +87,7 @@ function App() {
       <Section 
         className="desserts-section" 
         heading="Desserts"
-        // content={desserts}
+        content={dessertItems}
       />
     </main>
     <Footer />
