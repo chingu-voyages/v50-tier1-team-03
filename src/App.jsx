@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import Header from "./components/Header.jsx"
-import FeaturedItem from "..components/FeaturedItem.jsx"
+import FeaturedItem from "./components/FeaturedItem.jsx"
 import menu from "../menu.json"
 import Footer from "./components/Footer.jsx"
 import Section from "./components/Section"
