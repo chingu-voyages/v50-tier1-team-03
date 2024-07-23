@@ -1,5 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// Can not render locally with this import. To fix later
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const HeaderNav = () => {
     return(
@@ -8,7 +9,7 @@ const HeaderNav = () => {
                 <li>About</li>
                 <li>Contact</li>
                 <li>Add Credits</li>
-                <li><FontAwesomeIcon icon={faCartShopping} /></li>
+                {/* <li><FontAwesomeIcon icon={faCartShopping} /></li> */}
             </ul>
         </nav>
     )
