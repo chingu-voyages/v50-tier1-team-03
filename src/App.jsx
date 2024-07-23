@@ -15,12 +15,14 @@ function App() {
     if (item.category.includes("side")) {
       return (
         <div className="flex menu-item-card">
+        <div className="img-container">
+          <img src={item.image} alt={item.name} className="menu-img" />
+        </div>
         <div className="item-info">
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>{item.price}</p>
-          </div>
-          <img src={item.image} alt={item.name} className="menu-img" />
+        </div>
         </div>
       )   
     } 
@@ -30,12 +32,14 @@ function App() {
     if (item.category.includes("bbq")) {
       return (
         <div className="flex menu-item-card">
+        <div className="img-container">
+          <img src={item.image} alt={item.name} className="menu-img" />
+        </div>
         <div className="item-info">
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>{item.price}</p>
-          </div>
-          <img src={item.image} alt={item.name} className="menu-img" />
+        </div>
         </div>
       )       
     }
@@ -44,12 +48,14 @@ function App() {
   const drinkItems = drinks.map((item) => {
     return (
       <div className="flex menu-item-card">
+      <div className="img-container">
+        <img src={item.image} alt={item.name} className="menu-img" />
+      </div>
       <div className="item-info">
           <h3>{item.name}</h3>
           <p>{item.description}</p>
           <p>{item.price}</p>
-        </div>
-        <img src={item.image} alt={item.name} className="menu-img" />
+      </div>
       </div>
     ) 
   })
@@ -57,12 +63,14 @@ function App() {
   const dessertItems = desserts.map((item) => {
     return (
       <div className="flex menu-item-card">
+      <div className="img-container">
+        <img src={item.image} alt={item.name} className="menu-img" />
+      </div>
       <div className="item-info">
           <h3>{item.name}</h3>
           <p>{item.description}</p>
           <p>{item.price}</p>
-        </div>
-        <img src={item.image} alt={item.name} className="menu-img" />
+      </div>
       </div>
     ) 
   })
