@@ -40,6 +40,27 @@ body {
   padding: 0 1em;
 }
 
+/* AboutPage component */
+.about-page-container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-page-content{
+  margin: 0 auto 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 40%;
+  text-align: center;
+}
+
+.about-page-container > p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+/* Media Queries */
 @media (min-width: 400px) {
   .menu-item-card {
     flex-direction: row;;
