@@ -4,6 +4,7 @@ import FeaturedItem from "./components/FeaturedItem.jsx"
 import menu from "../menu.json"
 import Footer from "./components/Footer.jsx"
 import Section from "./components/Section"
+import MenuNav from "./components/MenuNav.jsx"
 
 
 function App() {
@@ -79,24 +80,29 @@ function App() {
     <>
     <Header />
     <FeaturedItem />
+    <MenuNav/>
     <main>
       <Section 
-        className="meals-section" 
+        className="meals-section"
+        id="bbq-meals" 
         heading="BBQ Meals"
         content={bbqItems}
       />
       <Section 
         className="sides-section" 
+        id="sides"
         heading="Sides"
         content={sideItems}
       />
       <Section 
         className="drinks-section" 
+        id="drinks"
         heading="Drinks"
         content={drinkItems}
       />
       <Section 
         className="desserts-section" 
+        id="desserts"
         heading="Desserts"
         content={dessertItems}
       />
