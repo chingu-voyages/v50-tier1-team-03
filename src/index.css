@@ -1,6 +1,45 @@
 body {
+  margin: 0;
   background-color: rgb(199, 115, 59);
   color: rgb(246, 246, 236);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  padding: 0.5em;
+  margin-top: 6em;
+}
+
+.menu-nav-container {
+  position: relative;
+}
+
+.menu-links-list {
+  width: 100%;
+  background: rgb(246, 246, 236);
+  color: rgba(48, 43, 43, 0.915);
+  padding: 0.5em;
+}
+
+.menu-links-list {
+  position: fixed;
+  display: flex;
+  gap: 2em;
+  font-size: 1.25rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  text-decoration: underline;
 }
 
 .menu-img {
@@ -8,12 +47,6 @@ body {
   width: 200px;
   height: 200px;
 }
-
-/* .flex {
-  display: flex;
-  justify-content: space-between;
-} */
-
 
 .menu-item-card {
   display: flex;
@@ -44,7 +77,6 @@ body {
   .menu-item-card {
     flex-direction: row;;
     justify-content: space-between;
-
   }
 
   .img-container {
