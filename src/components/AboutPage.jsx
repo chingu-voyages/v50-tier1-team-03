@@ -5,9 +5,8 @@ export default function AboutPage(){
         <div className='about-page-container'>
             <Header/>
             <div className='about-page-content'>
-                <img style={{width:"100px"}}src="src\assets\img-placeholder.png" alt="" />
+                <img style={{width:"100px"}}src="../assets/logo.png" alt="Griddle and Github Grill logo" />
                 <div>
-                    <h1>Griddle and GitHub Grill</h1>
                     <h2>ABOUT US</h2>
                 </div>
             </div>

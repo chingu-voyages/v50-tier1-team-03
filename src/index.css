@@ -49,7 +49,6 @@ body {
 .about-page-content{
   margin: 0 auto 2em;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   width: 40%;
   text-align: center;
