@@ -5,7 +5,7 @@ import menu from "../menu.json"
 import Footer from "./components/Footer.jsx"
 import Section from "./components/Section"
 import MenuNav from "./components/MenuNav.jsx"
-
+import { Link } from "react-router-dom"
 
 function App() {
   const meals = menu.meals 
@@ -32,16 +32,18 @@ function App() {
   const bbqItems = meals.map((item) => {
     if (item.category.includes("bbq")) {
       return (
-        <div className="flex menu-item-card">
-        <div className="img-container">
-          <img src={item.image} alt={item.name} className="menu-img" />
-        </div>
-        <div className="item-info">
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>{item.price}</p>
-        </div>
-        </div>
+        <Link key={item.id} to={`/menu/${item.url}`}>
+          <div className="flex menu-item-card">
+            <div className="img-container">
+              <img src={item.image} alt={item.name} className="menu-img" />
+            </div>
+            <div className="item-info">
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <p>{item.price}</p>
+            </div>
+          </div>
+        </Link>
       )       
     }
   })

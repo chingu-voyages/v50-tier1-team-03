@@ -1,17 +1,23 @@
 import { useState } from 'react'
-
-// pass cart state, item state?, and json menu item props.
+import { useParams } from "react-router-dom"
+import menu from "../../menu.json"
 
 // item state- we could raise the item state up one component into the app. that way, 
 // each window does not have it's own state. it's managed in one place.
-export default function MenuItemPage(props){
-
+export default function MenuItemPage(){
     const [item, setItem] = useState({
         modifications:[], 
         addOns:[],
         amount: 0,
     })
-    console.log(item)
+
+    const param = useParams()
+
+    function isItem(item){
+        return item.url === param.itemId
+    }
+
+    const menuItem = menu.meals.find(isItem)
 
     function handleModification(e){
         const newModification = e.target.textContent
@@ -53,13 +59,13 @@ export default function MenuItemPage(props){
     return(
         <>
             {/* Instead of hard-coded values, use props*/}
-            <h1>Dylan's Pulled Pork Sandwich</h1> 
+            <h1>{menuItem.name}</h1> 
             <img src="" alt="Item Image" />
-            <h2>Dylan's Pulled Pork Sandwich</h2>
-            <h3>Menu Description</h3>
+            <h2>{menuItem.name}</h2>
+            <h3>{menuItem.description}</h3>
             {/* Component for Modifications? */}
             <div className='modifications-container'>
-                <h4>Bread:</h4>
+                <h4>Modifiers:</h4>
                 <h5>Required *</h5>
                 <button onClick={(e) => handleModification(e)}>Toasted Brioche Bun</button>
                 <button onClick={(e) => handleModification(e)}>Gluten-Free Bun</button>
@@ -67,7 +73,7 @@ export default function MenuItemPage(props){
 
             {/* Component for Options? */}
             <div className='options-container'>
-                <h4>Toppings</h4>
+                <h4>Add-Ons:</h4>
                 <h5>Required *</h5>
                 <button onClick={(e) => handleAddOn(e)}>Pickles</button>
                 <button onClick={(e) => handleAddOn(e)}>Carmalized Onions</button>
@@ -88,7 +94,7 @@ export default function MenuItemPage(props){
                     </div>
                 </button>
 
-                <button>Add to Cart | $10.00</button>
+                <button>Add to Cart | ${menuItem.price}</button>
             </div>
         </>
     )
