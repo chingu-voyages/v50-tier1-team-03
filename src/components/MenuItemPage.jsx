@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useParams } from "react-router-dom"
 import menu from "../../menu.json"
-// pass cart state, item state?, and json menu item props.
 
 // item state- we could raise the item state up one component into the app. that way, 
 // each window does not have it's own state. it's managed in one place.
@@ -11,7 +10,6 @@ export default function MenuItemPage(){
         addOns:[],
         amount: 0,
     })
-    // // console.log(item)
 
     const param = useParams()
 
@@ -20,9 +18,6 @@ export default function MenuItemPage(){
     }
 
     const menuItem = menu.meals.find(isItem)
-    console.log(menuItem)
-
-
 
     function handleModification(e){
         const newModification = e.target.textContent
