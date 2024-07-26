@@ -63,6 +63,14 @@ section {
   text-decoration: underline;
 }
 
+.menu-nav-container.sticky {
+  position: fixed; /* Fixed position when sticky */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 /* =========== FEATURED STYLES =========== */
 
 .featured--item__image {
