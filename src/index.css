@@ -26,7 +26,16 @@ main {
   padding: 0.5em;
 }
 
-section {
+/* section {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+header,
+nav,
+main, 
+section,
+footer {
   max-width: 1200px;
   margin: 0 auto;
 }
