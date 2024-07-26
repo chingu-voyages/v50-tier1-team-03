@@ -5,7 +5,7 @@ const FeaturedItem = () => {
     return(
         <section className="featured-item">
             <div className="item-image">
-               <img src="../assets/shredded-shroom.png" alt="Shredded Shroom Sandwich"></img>
+               <img src="../src/assets/shredded-shroom.png" alt="Shredded Shroom Sandwich" className="featured--item__image"></img>
             </div>
             <div className="item-description">
                 <h2>Item of the Month!</h2>
