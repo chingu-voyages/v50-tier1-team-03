@@ -72,6 +72,11 @@ section {
 
 /* =========== MENU STYLES =========== */
 
+.menu--cards__container {
+  display: grid;
+  gap: 1.5em;
+}
+
 .menu-img {
   width: 325px;
   height: 225px;
@@ -130,9 +135,7 @@ section {
 
 @media (min-width: 400px) {
   .menu--cards__container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5em;
   }
 
   .menu-item-card {
