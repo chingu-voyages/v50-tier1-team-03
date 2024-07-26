@@ -1,6 +1,6 @@
 :root, :root::before, :root::after {
   box-sizing: border-box;
-
+  font-family: "Quicksand", sans-serif;
 /* CSS custom variables for color palette */
   --main-bg: rgb(199, 115, 59);
   --accent-bg: rgb(240, 79, 11);
