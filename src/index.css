@@ -13,7 +13,6 @@
 /* =========== MAIN STYLES =========== */
 
 body {
-  margin: 0;
   background-color: var(--main-bg);
   color: var(--main--text__light);
 }
@@ -25,7 +24,6 @@ ul {
 
 main {
   padding: 0.5em;
-  margin-top: 6em;
 }
 
 /* ======== HEADER STYLES ======== */
@@ -37,9 +35,8 @@ main {
 }
 
 .menu-links-list {
-  width: 100%;
   background: var(--light-bg);
-  color: var(var(--main--text__dark));
+  color: var(--main--text__dark);
   padding: 0.5em;
 }
 
@@ -92,7 +89,7 @@ main {
 
 .item-info {
   width: 80%;
-  padding: 0 1em;
+  /* padding: 0 1em; */
 }
 
 /* ========= ABOUT STYLES ========= */
