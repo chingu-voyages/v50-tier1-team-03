@@ -65,7 +65,8 @@ section {
 /* =========== FEATURED STYLES =========== */
 
 .featured--item__image {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 400px;
   border-radius: 5px;
 }
