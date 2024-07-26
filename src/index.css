@@ -1,6 +1,6 @@
 :root, :root::before, :root::after {
   box-sizing: border-box;
-
+  font-family: "Quicksand", sans-serif;
 /* CSS custom variables for color palette */
   --main-bg: rgb(199, 115, 59);
   --accent-bg: rgb(240, 79, 11);
@@ -13,7 +13,6 @@
 /* =========== MAIN STYLES =========== */
 
 body {
-  margin: 0;
   background-color: var(--main-bg);
   color: var(--main--text__light);
 }
@@ -25,7 +24,6 @@ ul {
 
 main {
   padding: 0.5em;
-  margin-top: 6em;
 }
 
 /* ======== HEADER STYLES ======== */
@@ -37,14 +35,13 @@ main {
 }
 
 .menu-links-list {
-  width: 100%;
   background: var(--light-bg);
-  color: var(var(--main--text__dark));
+  color: var(--main--text__dark);
   padding: 0.5em;
 }
 
 .menu-links-list {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   gap: 2em;
   font-size: 1.25rem;
@@ -65,9 +62,8 @@ main {
 /* =========== MENU STYLES =========== */
 
 .menu-img {
-  display: block;
-  width: 200px;
-  height: 200px;
+  width: 325px;
+  height: 225px;
 }
 
 .menu-item-card {
@@ -130,5 +126,9 @@ main {
 
   .img-container {
     width: 50%;
+  }
+
+  .menu-img {
+    width: 225px;
   }
 }
