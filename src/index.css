@@ -37,6 +37,7 @@ section {
 
 .menu-nav-container {
   position: relative;
+  overflow: scroll;
 }
 
 .menu-links-list {
@@ -48,7 +49,7 @@ section {
 .menu-links-list {
   /* position: fixed; */
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
   font-size: 1.25rem;
 }
 
