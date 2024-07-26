@@ -1,7 +1,21 @@
+:root, :root::before, :root::after {
+  box-sizing: border-box;
+
+/* CSS custom variables for color palette */
+  --main-bg: rgb(199, 115, 59);
+  --accent-bg: rgb(240, 79, 11);
+  --dark-bg: rgb(48, 43, 43, 0.915);
+  --light-bg: rgb(246, 246, 236);
+  --main--text__light: rgb(246, 246, 236);
+  --main--text__dark: rgb(48, 43, 43, 0.915);
+}
+
+/* =========== MAIN STYLES =========== */
+
 body {
   margin: 0;
-  background-color: rgb(199, 115, 59);
-  color: rgb(246, 246, 236);
+  background-color: var(--main-bg);
+  color: var(--main--text__light);
 }
 
 ul {
@@ -14,14 +28,18 @@ main {
   margin-top: 6em;
 }
 
+/* ======== HEADER STYLES ======== */
+
+/* ========= NAV STYLES ========= */
+
 .menu-nav-container {
   position: relative;
 }
 
 .menu-links-list {
   width: 100%;
-  background: rgb(246, 246, 236);
-  color: rgba(48, 43, 43, 0.915);
+  background: var(--light-bg);
+  color: var(var(--main--text__dark));
   padding: 0.5em;
 }
 
@@ -42,6 +60,10 @@ main {
   text-decoration: underline;
 }
 
+/* =========== FEATURED STYLES =========== */
+
+/* =========== MENU STYLES =========== */
+
 .menu-img {
   display: block;
   width: 200px;
@@ -55,8 +77,8 @@ main {
   width: 100%;
   max-width: 600px;
   border: 1px solid black;
-  background:rgb(246, 246, 236);
-  color: rgba(48, 43, 43, 0.915);
+  background:var(--light-bg);
+  color: var(--main--text__dark);
   margin-bottom: 1em;
 }
 
@@ -64,7 +86,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgba(48, 43, 43, 0.915);
+  background-color: var(--dark-bg);
   text-align: center;
 }
 
@@ -73,7 +95,8 @@ main {
   padding: 0 1em;
 }
 
-/* AboutPage component */
+/* ========= ABOUT STYLES ========= */
+
 .about-page-container{
   width: 70%;
   margin: 0 auto;
@@ -92,7 +115,13 @@ main {
   line-height: 2rem;
 }
 
-/* Media Queries */
+
+/* ======== FOOTER STYLES ======== */
+
+
+
+/*======== Media Queries ==========*/
+
 @media (min-width: 400px) {
   .menu-item-card {
     flex-direction: row;;
