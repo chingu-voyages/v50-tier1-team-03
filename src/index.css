@@ -26,6 +26,11 @@ main {
   padding: 0.5em;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* ======== HEADER STYLES ======== */
 
 /* ========= NAV STYLES ========= */
@@ -81,7 +86,6 @@ main {
   border: 1px solid black;
   background:var(--light-bg);
   color: var(--main--text__dark);
-  margin-bottom: 1em;
 }
 
 .img-container {
@@ -125,6 +129,12 @@ main {
 /*======== Media Queries ==========*/
 
 @media (min-width: 400px) {
+  .menu--cards__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+  }
+
   .menu-item-card {
     flex-direction: row;;
     justify-content: space-between;
