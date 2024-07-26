@@ -62,9 +62,8 @@ main {
 /* =========== MENU STYLES =========== */
 
 .menu-img {
-  display: block;
-  width: 200px;
-  height: 200px;
+  width: 325px;
+  height: 225px;
 }
 
 .menu-item-card {
@@ -89,7 +88,7 @@ main {
 
 .item-info {
   width: 80%;
-  /* padding: 0 1em; */
+  padding: 0 1em;
 }
 
 /* ========= ABOUT STYLES ========= */
@@ -127,5 +126,9 @@ main {
 
   .img-container {
     width: 50%;
+  }
+
+  .menu-img {
+    width: 225px;
   }
 }
