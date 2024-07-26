@@ -41,7 +41,7 @@ main {
 }
 
 .menu-links-list {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   gap: 2em;
   font-size: 1.25rem;
