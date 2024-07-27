@@ -34,7 +34,6 @@ main {
 } */
 
 header,
-nav,
 main, 
 section,
 footer {
@@ -42,13 +41,52 @@ footer {
   margin: 0 auto;
 }
 
-/* ======== HEADER STYLES ======== */
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* ======== HEADER STYLES ======== */s
+
+.griddle-logo {
+  width: 10px;
+  height: 25px;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+  font-size: 1.2rem;
+}
+
+.header--nav__link {
+  color: var(--main--text__light);
+}
 
 /* ========= NAV STYLES ========= */
 
 .menu-nav-container {
   position: relative;
   overflow: scroll;
+}
+
+.menu-nav {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .menu-links-list {
@@ -68,11 +106,6 @@ footer {
 .menu-link {
   text-decoration: none;
   color: inherit;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  text-decoration: underline;
 }
 
 .menu-nav-container.sticky {
@@ -159,6 +192,18 @@ footer {
 /*======== Media Queries ==========*/
 
 @media (min-width: 400px) {
+
+ 
+
+  .griddle-logo {
+    width: 100px;
+    height: 150px;
+  }
+
+  .header nav ul {
+    gap: 3em;
+  }
+
   .menu--cards__container {
     grid-template-columns: 1fr 1fr;
   }
@@ -175,5 +220,28 @@ footer {
 
   .menu-img {
     width: 225px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header,
+  .header div,
+  .header nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .header nav ul {
+    margin: unset;
+  }
+
+  .header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.3rem;
   }
 }
