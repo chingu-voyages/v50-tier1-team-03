@@ -8,6 +8,8 @@
   --light-bg: rgb(246, 246, 236);
   --main--text__light: rgb(246, 246, 236);
   --main--text__dark: rgb(48, 43, 43, 0.915);
+
+  --box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.4);
 }
 
 /* =========== MAIN STYLES =========== */
@@ -15,6 +17,11 @@
 body {
   background-color: var(--main-bg);
   color: var(--main--text__light);
+}
+
+img {
+  width: 100px;
+  max-width: 100%;
 }
 
 ul {
@@ -32,7 +39,6 @@ main {
 } */
 
 header,
-nav,
 main, 
 section,
 footer {
@@ -40,7 +46,49 @@ footer {
   margin: 0 auto;
 }
 
-/* ======== HEADER STYLES ======== */
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* ======== HEADER STYLES ======== */s
+
+.griddle-logo {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+
+
+.header nav ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.header--nav__link {
+  color: var(--main--text__light);
+}
 
 /* ========= NAV STYLES ========= */
 
@@ -49,10 +97,16 @@ footer {
   overflow: scroll;
 }
 
+.menu-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .menu-links-list {
-  background: var(--light-bg);
-  color: var(--main--text__dark);
+  background: var(--dark-bg);
+  color: var(--main--text__light);
   padding: 0.5em;
+  box-shadow: 0 2px 10px rgba(50, 50, 50, 0.4);
 }
 
 .menu-links-list {
@@ -65,11 +119,6 @@ footer {
 .menu-link {
   text-decoration: none;
   color: inherit;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  text-decoration: underline;
 }
 
 .menu-nav-container.sticky {
@@ -87,6 +136,7 @@ footer {
   max-width: 400px;
   height: 400px;
   border-radius: 5px;
+  box-shadow: var(--box-shadow);
 }
 
 /* =========== MENU STYLES =========== */
@@ -110,6 +160,8 @@ footer {
   border: 1px solid black;
   background:var(--light-bg);
   color: var(--main--text__dark);
+  border-radius: 0 0 8px 8px;
+  box-shadow: var(--box-shadow);
 }
 
 .img-container {
@@ -152,7 +204,12 @@ footer {
 
 /*======== Media Queries ==========*/
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
+
+  .header nav ul {
+    gap: 3em;
+  }
+
   .menu--cards__container {
     grid-template-columns: 1fr 1fr;
   }
@@ -160,6 +217,7 @@ footer {
   .menu-item-card {
     flex-direction: row;;
     justify-content: space-between;
+    border-radius: 0 8px 8px 0;
   }
 
   .img-container {
@@ -168,5 +226,39 @@ footer {
 
   .menu-img {
     width: 225px;
+  }
+
+  .griddle-logo {
+    width: 100px;
+    height: 150px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header nav {
+    margin: -5px 0 25px 0;
+    font-size: 1.2rem;
+  }
+
+  .header div,
+  .header nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .header nav ul {
+    margin: unset;
+  }
+
+
+
+  h1 {
+    font-size: 2.3rem;
+    margin-top: 0;
   }
 }
