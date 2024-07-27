@@ -19,6 +19,11 @@ body {
   color: var(--main--text__light);
 }
 
+img {
+  width: 100px;
+  max-width: 100%;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -53,24 +58,32 @@ a:focus {
 /* ======== HEADER STYLES ======== */s
 
 .griddle-logo {
-  width: 10px;
-  height: 25px;
+  width: 25px !important;
+  height: 25px !important;
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .header div {
   display: flex;
   align-items: center;
+  gap: 1em;
 }
+
+
 
 .header nav ul {
   display: flex;
-  justify-content: center;
-  margin-top: -25px;
-  font-size: 1.2rem;
+  justify-content: space-around;
+
 }
 
 .header--nav__link {
@@ -191,14 +204,7 @@ h1 {
 
 /*======== Media Queries ==========*/
 
-@media (min-width: 400px) {
-
- 
-
-  .griddle-logo {
-    width: 100px;
-    height: 150px;
-  }
+@media (min-width: 600px) {
 
   .header nav ul {
     gap: 3em;
@@ -221,10 +227,24 @@ h1 {
   .menu-img {
     width: 225px;
   }
-}
 
-@media (min-width: 1000px) {
-  .header,
+  .griddle-logo {
+    width: 100px;
+    height: 150px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header nav {
+    margin: -5px 0 25px 0;
+    font-size: 1.2rem;
+  }
+
   .header div,
   .header nav ul {
     display: flex;
@@ -235,13 +255,10 @@ h1 {
     margin: unset;
   }
 
-  .header {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
+
 
   h1 {
     font-size: 2.3rem;
+    margin-top: 0;
   }
 }
