@@ -1,12 +1,12 @@
 export default function Section({ id, heading, content }) {
     return (
-        <a id={id}>
+        <section id={id}>
             <h2>{heading}</h2>
-            <div>
+            <div className="menu--cards__container">
                 {content}
             </div>
             {/* menu items */}
-        </a>
+        </section>
         
     )
 }
