@@ -2,7 +2,7 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 /* CSS custom variables for color palette */
-  --main-bg: rgb(199, 115, 59);
+  --main-bg: rgb(210, 188, 159);
   --accent-bg: rgb(240, 79, 11);
   --dark-bg: rgb(48, 43, 43, 0.915);
   --light-bg: rgb(246, 246, 236);
@@ -199,6 +199,18 @@ h1 {
 
 
 /* ======== FOOTER STYLES ======== */
+.Footer{
+  padding: 50px;
+  margin: auto;
+  background-color: rgb(72, 59, 52);
+  border-radius: 7px;
+  display: inline-block;
+}
+.FooterLink{
+  display: inline-block;
+  background-size: 50%;
+  height: 2em;
+}
 
 
 
