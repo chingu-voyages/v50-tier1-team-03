@@ -94,7 +94,7 @@ export default function MenuItemPage(){
                     </div>
                 </button>
 
-                <button>Add to Cart | ${menuItem.price}</button>
+                <button>Add to Cart | ${menuItem.price*item.amount}</button>
             </div>
         </>
     )
