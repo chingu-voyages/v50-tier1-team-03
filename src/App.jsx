@@ -15,16 +15,18 @@ function App() {
   const sideItems = meals.map((item) => {
     if (item.category.includes("side")) {
       return (
-        <div className="flex menu-item-card">
-        <div className="img-container">
-          <img src={item.image} alt={item.name} className="menu-img" />
-        </div>
-        <div className="item-info">
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>{item.price}</p>
-        </div>
-        </div>
+        <Link key={item.id} to={`/menu/${item.url}`}>
+          <div className="flex menu-item-card">
+            <div className="img-container">
+              <img src={item.image} alt={item.name} className="menu-img" />
+            </div>
+            <div className="item-info">
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <p>{item.price}</p>
+            </div>
+          </div>
+        </Link>
       )   
     } 
   })
@@ -50,31 +52,35 @@ function App() {
 
   const drinkItems = drinks.map((item) => {
     return (
-      <div className="flex menu-item-card">
-      <div className="img-container">
-        <img src={item.image} alt={item.name} className="menu-img" />
-      </div>
-      <div className="item-info">
-          <h3>{item.name}</h3>
-          <p>{item.description}</p>
-          <p>{item.price}</p>
-      </div>
-      </div>
+      <Link key={item.id} to={`/menu/${item.url}`}>
+        <div className="flex menu-item-card">
+          <div className="img-container">
+            <img src={item.image} alt={item.name} className="menu-img" />
+          </div>
+          <div className="item-info">
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+          < p>{item.price}</p>
+          </div>
+        </div>
+      </Link>
     ) 
   })
 
   const dessertItems = desserts.map((item) => {
     return (
-      <div className="flex menu-item-card">
-      <div className="img-container">
-        <img src={item.image} alt={item.name} className="menu-img" />
-      </div>
-      <div className="item-info">
-          <h3>{item.name}</h3>
-          <p>{item.description}</p>
-          <p>{item.price}</p>
-      </div>
-      </div>
+      <Link key={item.id} to={`/menu/${item.url}`}>
+        <div className="flex menu-item-card">
+          <div className="img-container">
+            <img src={item.image} alt={item.name} className="menu-img" />
+          </div>
+          <div className="item-info">
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <p>{item.price}</p>
+          </div>
+        </div>
+      </Link>
     ) 
   })
 
@@ -110,7 +116,6 @@ function App() {
       />
     </main>
     <Footer />
-
     </>
   )
 }
