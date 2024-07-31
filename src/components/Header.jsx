@@ -1,6 +1,6 @@
 import HeaderNav from "./HeaderNav";
 
-const Header = () => {
+export default function Header()  {
     return(
         <header className="header">
             <div>
@@ -11,5 +11,3 @@ const Header = () => {
         </header>
     )
 }
-
-export default Header;
