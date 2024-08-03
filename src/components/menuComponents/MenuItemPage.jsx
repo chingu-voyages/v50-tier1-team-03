@@ -19,7 +19,7 @@ export default function MenuItemPage(){
         <>
             {/* Instead of hard-coded values, use props*/}
             <h1>{menuItem.name}</h1> 
-            <img src="" alt="Item Image" />
+            <img src={menuItem.image} alt={menuItem.name} />
             <h2>{menuItem.name}</h2>
             <h3>{menuItem.description}</h3>
 
