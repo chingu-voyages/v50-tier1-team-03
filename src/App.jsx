@@ -15,6 +15,7 @@ function App() {
   const sideItems = meals.map((item) => {
     if (item.category.includes("side")) {
       return (
+        <Link key={item.id} to={`/menu/${item.url}`}>
         <div className="flex menu-item-card">
         <div className="img-container">
           <img src={item.image} alt={item.name} className="menu-img" />
@@ -25,6 +26,7 @@ function App() {
             <p>{item.price}</p>
         </div>
         </div>
+        </Link>
       )   
     } 
   })
@@ -50,6 +52,7 @@ function App() {
 
   const drinkItems = drinks.map((item) => {
     return (
+      <Link key={item.id} to={`/menu/${item.url}`}>
       <div className="flex menu-item-card">
       <div className="img-container">
         <img src={item.image} alt={item.name} className="menu-img" />
@@ -60,11 +63,13 @@ function App() {
           <p>{item.price}</p>
       </div>
       </div>
+      </Link>
     ) 
   })
 
   const dessertItems = desserts.map((item) => {
     return (
+      <Link key={item.id} to={`/menu/${item.url}`}>
       <div className="flex menu-item-card">
       <div className="img-container">
         <img src={item.image} alt={item.name} className="menu-img" />
@@ -75,6 +80,7 @@ function App() {
           <p>{item.price}</p>
       </div>
       </div>
+      </Link>
     ) 
   })
 

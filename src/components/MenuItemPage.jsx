@@ -17,7 +17,13 @@ export default function MenuItemPage(){
         return item.url === param.itemId
     }
 
-    const menuItem = menu.meals.find(isItem)
+    const menuObjects = Object.values(menu)
+
+    const menuItem = menuObjects.map(item => item.find(isItem))
+    // menu.meals.find(isItem)
+ 
+    
+    
 
     function handleModification(e){
         const newModification = e.target.textContent
