@@ -1,6 +1,9 @@
 
 import { useParams } from "react-router-dom"
 import menu from "../../../menu.json"
+import Modifications from './Modifications'
+import Options from './Options'
+import AmountAddToCart from './AmountAddToCart'
 
 // item state- we could raise the item state up one component into the app. that way, 
 // each window does not have it's own state. it's managed in one place.
