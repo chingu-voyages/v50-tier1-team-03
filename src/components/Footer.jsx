@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
             <div className ="FooterLink">
                 <h3>Terms and Privacy</h3>
-                <a href = "https://www.chingu.io/privacy" style={{color: "white"}} target = "_blank">Primacy Terms</a>
+                <a href = "https://www.chingu.io/privacy" style={{color: "white"}} target = "_blank">Privacy Terms</a>
             </div>
             <div className = "FooterLink">
                 <h3>Social Media</h3>

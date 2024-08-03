@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import ErrorPage from "./components/ErrorPage.jsx"
 import AboutPage from "./components/AboutPage.jsx"
-import MenuItemPage from "./components/MenuItemPage.jsx"
+import MenuItemPage from "./components/menuComponents/MenuItemPage.jsx"
+import DrinkItemPage from "./components/menuComponents/DrinkItemPage.jsx"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/menu/:itemId",
     element: <MenuItemPage/>
+  },
+  {
+    path: "/drink/:itemId",
+    element: <DrinkItemPage/>
   },
 ])
 
