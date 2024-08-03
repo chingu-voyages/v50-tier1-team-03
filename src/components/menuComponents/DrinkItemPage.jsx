@@ -15,6 +15,7 @@ export default function DrinkItemPage(){
     }
 
     const drinkItem = menu.drinks.find(isItem)
+    console.log(drinkItem)
     
     return(
         <>

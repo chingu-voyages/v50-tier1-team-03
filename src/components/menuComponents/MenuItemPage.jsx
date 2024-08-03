@@ -13,7 +13,7 @@ export default function MenuItemPage(){
         return item.url === param.itemId
     }
 
-    const menuItem = menu.meals.find(isItem)
+    const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem)|| menu.desserts.find(isItem)
     
     return(
         <>

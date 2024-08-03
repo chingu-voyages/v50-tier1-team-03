@@ -25,10 +25,10 @@ const router = createBrowserRouter([
     path: "/menu/:itemId",
     element: <MenuItemPage/>
   },
-  {
-    path: "/drink/:itemId",
-    element: <DrinkItemPage/>
-  },
+  // {
+  //   path: "/drink/:itemId",
+  //   element: <DrinkItemPage/>
+  // },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
