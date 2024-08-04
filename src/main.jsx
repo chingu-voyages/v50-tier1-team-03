@@ -6,6 +6,7 @@ import AboutPage from "./components/AboutPage.jsx"
 import MenuItemPage from "./components/menuComponents/MenuItemPage.jsx"
 import DrinkItemPage from "./components/menuComponents/DrinkItemPage.jsx"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Cart from "./components/cartComponents/Cart.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   //   path: "/drink/:itemId",
   //   element: <DrinkItemPage/>
   // },
+  {
+    path: "/cart",
+    element: <Cart/>
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

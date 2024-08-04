@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { useParams } from "react-router-dom"
-import menu from "../../../menu.json"    
-    
+import menu from "../../../menu.json"
+import {cartContextProvider} from "../cartComponents/CartContextProvider.jsx";
+import Cart from "../cartComponents/Cart.jsx"
+
 export default function AmountAddToCart() {
     const [item, setItem] = useState({
         modifications:[], 
@@ -22,10 +24,20 @@ export default function AmountAddToCart() {
             return
         }
         setItem(prevItem => ({...item, amount: prevItem.amount - 1}))
+        passStateToCart()
     }
 
     function handleAmountIncrease(){
         setItem(prevItem => ({...item, amount: prevItem.amount + 1}))
+        passStateToCart()
+    }
+
+    function passStateToCart(){
+        return (
+            <cartContextProvider>
+                <Cart />
+            </cartContextProvider>
+        )
     }
 
     return(
@@ -42,6 +54,6 @@ export default function AmountAddToCart() {
                 </div>
             </button>
             <button>Add to Cart | ${menuItem.price*item.amount}</button>
-        </div> 
+        </div>
     )
 }
