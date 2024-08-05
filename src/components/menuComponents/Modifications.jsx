@@ -15,9 +15,9 @@ export default function Modifications(){
     return(
     <   div className='modifications-container'>
             <h4>Modifiers:</h4>
-            <h5>Required *</h5>
-            <button onClick={(e) => handleModification(e)}>Toasted Brioche Bun</button>
-            <button onClick={(e) => handleModification(e)}>Gluten-Free Bun</button>
+            <p className="required">Required *</p>
+            <button className="modification-btn" onClick={(e) => handleModification(e)}>Toasted Brioche Bun</button>
+            <button className="modification-btn" onClick={(e) => handleModification(e)}>Gluten-Free Bun</button>
         </div>
     )
 }
