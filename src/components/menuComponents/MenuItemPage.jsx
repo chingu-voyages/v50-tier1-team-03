@@ -16,18 +16,18 @@ export default function MenuItemPage(){
     const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem)|| menu.desserts.find(isItem)
     
     return(
-        <>
+        <main className="menu-item-page">
             {/* Instead of hard-coded values, use props*/}
             <h1>{menuItem.name}</h1> 
             <img src={menuItem.image} alt={menuItem.name} />
             <h2>{menuItem.name}</h2>
-            <h3>{menuItem.description}</h3>
+            <p>{menuItem.description}</p>
 
             <Modifications />
 
             <Options />
 
             <AmountAddToCart />
-        </>
+        </main>
     )
 }
