@@ -212,7 +212,63 @@ h1 {
   height: 2em;
 }
 
+/* ======== Menu Item Page ======== */
 
+.menu-item-page {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: var(--dark-bg);
+  padding: 2em;
+  border: 2px solid var(--main--text__light);
+}
+
+.required {
+  margin-bottom: 0.5em;
+}
+
+.modifications-container,
+.options-container {
+  margin-bottom: 1em;
+}
+
+.modification-btn,
+.option-btn,
+.quantity-btn,
+.add-to-cart-btn {
+  font-family: inherit;
+  padding: 0.5em 1em;
+  background: var(--light-bg);
+  color: var(--main--text__dark);
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.modification-btn:focus,
+.option-btn:focus,
+.quantity-btn:focus,
+.add-to-cart-btn:focus,
+.modification-btn:hover,
+.option-btn:hover,
+.quantity-btn:hover,
+.add-to-cart-btn:hover {
+  opacity: 0.8;
+}
+
+.modification-btn:active,
+.option-btn:active,
+.quantity-btn:active,
+.add-to-cart-btn:active {
+  transform: scale(0.9);
+}
+
+.item-amount {
+  margin: 0 0.75em;
+  font-weight: bolder;
+}
+
+.add-to-cart-btn {
+  margin-left: 1em;
+}
 
 /*======== Media Queries ==========*/
 
