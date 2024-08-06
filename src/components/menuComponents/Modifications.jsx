@@ -1,4 +1,4 @@
-export default function Modifications({selectedItem, item}){
+export default function Modifications({selectedItem, item, setItem}){
     function handleModification(e){
         const newModification = e.target.textContent
         if (item.modifications.includes(newModification)){
