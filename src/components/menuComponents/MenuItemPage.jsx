@@ -13,7 +13,6 @@ export default function MenuItemPage(){
         addOns:[],
         amount: 0,
     })
-
     const param = useParams()
 
     function isItem(item){
@@ -33,7 +32,10 @@ export default function MenuItemPage(){
                 item={item}
                 setItem={setItem}/>
 
-            <Options />
+            <Options 
+                addOns={menuItem.addOns} 
+                item={item}
+                setItem={setItem}/>
 
             <AmountAddToCart />
         </main>
