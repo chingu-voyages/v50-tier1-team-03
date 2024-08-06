@@ -4,7 +4,8 @@ import App from './App.jsx'
 import ErrorPage from "./components/ErrorPage.jsx"
 import AboutPage from "./components/AboutPage.jsx"
 import MenuItemPage from "./components/menuComponents/MenuItemPage.jsx"
-import DrinkItemPage from "./components/menuComponents/DrinkItemPage.jsx"
+import Cart from "./components/cartComponents/Cart.jsx"
+// import DrinkItemPage from "./components/menuComponents/DrinkItemPage.jsx"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -25,10 +26,10 @@ const router = createBrowserRouter([
     path: "/menu/:itemId",
     element: <MenuItemPage/>
   },
-  // {
-  //   path: "/drink/:itemId",
-  //   element: <DrinkItemPage/>
-  // },
+  {
+    path: "/cart",
+    element: <Cart/>
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
