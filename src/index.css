@@ -220,14 +220,13 @@ section {
 
 .footer {
   margin-top: 2em;
-  padding: 20px;
+  padding: 20px 0 0;
   background-color: rgb(72, 59, 52);
   border-radius: 7px;  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 50vh;
 }
 
 .footer--link{
@@ -250,6 +249,11 @@ section {
 .social--links {
   display: flex;
   gap: 1em;
+}
+
+.footer--note {
+  margin-top: 2em;
+  font-size: 0.8rem
 }
 
 /* ======== Menu Item Page ======== */
@@ -412,7 +416,7 @@ section {
 
   .footer {
     height: 100%;
-    padding: 50px 0;
+    padding: 50px 0 20px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -430,9 +434,9 @@ section {
   }
 
   .footer--note {
-     margin-top: 2em;
      text-align: center;
      width: 100%;
+     margin-bottom: -2em;
   }
 
 }
