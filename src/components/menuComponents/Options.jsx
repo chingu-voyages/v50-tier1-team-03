@@ -15,10 +15,10 @@ export default function Options(){
     return(
         <div className='options-container'>
             <h4>Add-Ons:</h4>
-            <h5>Required *</h5>
-            <button onClick={(e) => handleAddOn(e)}>Pickles</button>
-            <button onClick={(e) => handleAddOn(e)}>Carmalized Onions</button>
-            <button onClick={(e) => handleAddOn(e)}>Extra Tangy BBQ Sauce</button>
+            <p className="required">Required *</p>
+            <button className="option-btn" onClick={(e) => handleAddOn(e)}>Pickles</button>
+            <button className="option-btn" onClick={(e) => handleAddOn(e)}>Carmalized Onions</button>
+            <button className="option-btn" onClick={(e) => handleAddOn(e)}>Extra Tangy BBQ Sauce</button>
         </div>
     )
 }
