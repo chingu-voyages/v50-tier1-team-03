@@ -6,6 +6,10 @@ import AboutPage from "./components/AboutPage.jsx"
 import MenuItemPage from "./components/menuComponents/MenuItemPage.jsx"
 import DrinkItemPage from "./components/menuComponents/DrinkItemPage.jsx"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import CreditPage from "./components/creditComponents/CreditPage.jsx";
+import CreditProvider from "./components/creditComponents/CreditContextProvider.jsx";
+import DecreaseCredit from "./components/creditComponents/DecreaseCredit.jsx";
+import IncreaseCredit from "./components/creditComponents/IncreaseCredit.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,11 +33,19 @@ const router = createBrowserRouter([
   //   path: "/drink/:itemId",
   //   element: <DrinkItemPage/>
   // },
+  {
+    path: "/credit",
+    element:
+    <CreditProvider>
+      <IncreaseCredit />
+      <DecreaseCredit />
+    </CreditProvider>
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router}/>
   </React.StrictMode>,
 )
-{/* <App /> */}
+

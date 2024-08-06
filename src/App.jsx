@@ -6,6 +6,11 @@ import Footer from "./components/Footer.jsx"
 import Section from "./components/Section"
 import MenuNav from "./components/MenuNav.jsx"
 import { Link } from "react-router-dom"
+import React from 'react';
+import { CreditProvider } from './components/creditComponents/CreditContextProvider.jsx';
+import IncreaseCredit from './components/creditComponents/IncreaseCredit.jsx';
+import DecreaseCredit from './components/creditComponents/DecreaseCredit.jsx';
+
 
 function App() {
   const meals = menu.meals 
