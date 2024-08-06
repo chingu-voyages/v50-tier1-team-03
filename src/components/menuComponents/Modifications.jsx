@@ -1,4 +1,4 @@
-export default function Modifications(){
+export default function Modifications({selectedItem, item}){
     function handleModification(e){
         const newModification = e.target.textContent
         if (item.modifications.includes(newModification)){
@@ -11,13 +11,21 @@ export default function Modifications(){
             }
         })
     }
+    let modifierBtns = selectedItem.modifiers.map(modifier => {
+        return(
+        <button
+            key={modifier}
+            className="modification-btn" 
+            onClick={(e) => handleModification(e)}>
+                {modifier}
+        </button>)
+    })
 
     return(
     <   div className='modifications-container'>
             <h4>Modifiers:</h4>
             <p className="required">Required *</p>
-            <button className="modification-btn" onClick={(e) => handleModification(e)}>Toasted Brioche Bun</button>
-            <button className="modification-btn" onClick={(e) => handleModification(e)}>Gluten-Free Bun</button>
+            {modifierBtns}
         </div>
     )
 }
