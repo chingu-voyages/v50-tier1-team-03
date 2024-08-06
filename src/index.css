@@ -30,13 +30,8 @@ ul {
 }
 
 main {
-  padding: 0.5em;
+  padding: 0 0.5em;
 }
-
-/* section {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
 
 header,
 main, 
@@ -110,7 +105,7 @@ h1 {
 }
 
 .menu-links-list {
-  /* position: fixed; */
+  margin: 0;
   display: flex;
   gap: 1.5em;
   font-size: 1.25rem;
@@ -140,6 +135,18 @@ h1 {
 }
 
 /* =========== MENU STYLES =========== */
+
+section {
+  border: 1px solid transparent;
+}
+
+.section--heading {
+  margin-top: 4em;
+}
+
+#bbq-meals {
+  margin-top: -2em;
+}
 
 .menu--cards__container {
   display: grid;
