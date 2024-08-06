@@ -4,13 +4,13 @@ import React from "react";
 const FeaturedItem = () => {
     return(
         <section className="featured-item">
+            <h2>Item of the Month!</h2>
             <div className="item-image">
                <img src="src/assets/shredded-shroom.png" alt="Shredded Shroom Sandwich" className="featured--item__image"></img>
             </div>
             <div className="item-description">
-                <h2>Item of the Month!</h2>
-                <h3>Filler menu item title.</h3>
-                <p>This is filler text for where the item description will go.</p>
+                <h3>Micha's Shredded Shroom Sandwich</h3>
+                <p>Micha prefers a pulled pork sandwich without the meat! Try her shredded, barbeque-slathered crimini mushrooms topped with a refreshing cabbage apple slaw.</p>
             </div>
         </section>
     )
