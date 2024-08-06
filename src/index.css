@@ -50,6 +50,17 @@ a:focus {
   text-decoration: underline;
 }
 
+.sr-only {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
 /* ======== HEADER STYLES ======== */
 
 .griddle-logo {
@@ -206,17 +217,39 @@ section {
 
 
 /* ======== FOOTER STYLES ======== */
-.Footer{
-  padding: 50px;
-  margin: auto;
+
+.footer {
+  margin-top: 2em;
+  padding: 20px;
   background-color: rgb(72, 59, 52);
-  border-radius: 7px;
-  display: inline-block;
+  border-radius: 7px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
 }
-.FooterLink{
-  display: inline-block;
-  background-size: 50%;
-  height: 2em;
+
+.footer--link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer--link a:focus,
+.footer--link a:hover {
+  outline: 1px solid var(--main--text__light);
+  outline-offset: 0.5em;
+}
+
+.footer--icon {
+  width: 1.5em;
+  margin-left: 0.5em;
+}
+
+.social--links {
+  display: flex;
+  gap: 1em;
 }
 
 /* ======== Menu Item Page ======== */
@@ -372,10 +405,34 @@ section {
     margin: unset;
   }
 
-
-
   h1 {
     font-size: 2.3rem;
     margin-top: 0;
   }
+
+  .footer {
+    height: 100%;
+    padding: 50px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer > * {
+    width: 33%;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer--link h3 {
+    margin-top: 0;
+  }
+
+  .footer--note {
+     margin-top: 2em;
+     text-align: center;
+     width: 100%;
+  }
+
 }
