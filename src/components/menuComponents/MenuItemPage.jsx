@@ -19,7 +19,6 @@ export default function MenuItemPage(){
     function isItem(item){
         return item.url === param.itemId
     }
-
     const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem)|| menu.desserts.find(isItem)
     return(
         <main className="menu-item-page">
@@ -29,7 +28,10 @@ export default function MenuItemPage(){
             <h2>{menuItem.name}</h2>
             <p>{menuItem.description}</p>
 
-            <Modifications selectedItem={menuItem} item={item}/>
+            <Modifications 
+                selectedItem={menuItem} 
+                item={item}
+                setItem={setItem}/>
 
             <Options />
 
