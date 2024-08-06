@@ -5,28 +5,35 @@ import twitter from "../assets/twitter.png"
 
 const Footer = () => {
     return(
-        <div className = "Footer">
-            <link rel="stylesheet" href="src/index.css"></link>
-            <div className = "FooterLink">
+        <footer className="footer">
+            {/* <link rel="stylesheet" href="src/index.css"></link> */}
+            <div className="footer--link">
                 <h3>Source Code</h3>
-                <a href = "https://github.com/chingu-voyages/v50-tier1-team-03" style={{color: "white"}} target = "_blank">
+                <a href="https://github.com/chingu-voyages/v50-tier1-team-03" style={{color: "white"}} target="_blank">
                     Repository Link
-                <img src={github} style={{width:"5%"}} alt={""}/>
+                    <img src={github} alt={""} className="footer--icon"/>
                 </a>
             </div>
-            <div className ="FooterLink">
+            <div className ="footer--link">
                 <h3>Terms and Privacy</h3>
-                <a href = "https://www.chingu.io/privacy" style={{color: "white"}} target = "_blank">Privacy Terms</a>
+                <a href="https://www.chingu.io/privacy" style={{color: "white"}} target = "_blank">Privacy Terms</a>
             </div>
-            <div className = "FooterLink">
+            <div className="footer--link">
                 <h3>Social Media</h3>
-                <a href="https://www.linkedin.com/company/chingu-os/"><img src={linkedin} style={{width:"3%"}} alt={""}/></a>
-                <a href="https://twitter.com/ChinguCollabs"><img src={twitter} style={{width:"3%"}} alt={""}/></a>
+                <div className="social--links">
+                <a href="https://www.linkedin.com/company/chingu-os/"><img src={linkedin} alt={""} className="footer--icon"/>
+                    <span className="sr-only">Chingu LinkedIn Profile</span>
+                </a>
+                <a href="https://twitter.com/ChinguCollabs"><img src={twitter} alt={""} className="footer--icon"/>
+                <span className="sr-only">Chingu X Profile</span>
+
+                </a>
+                </div>
             </div>
-            <div className = "FooterNote">
+            <div className="footer--note">
                 <p>© 2024 Chingu, Inc. All rights reserved</p>
             </div>
-        </div>
+        </footer>
     )
 }
 
