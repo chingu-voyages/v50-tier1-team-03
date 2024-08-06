@@ -7,9 +7,9 @@ const HeaderNav = () => {
     return(
         <nav>
             <ul>
-                <li><a href="#" className="header--nav__link">About</a></li>
-                <li><a href="#" className="header--nav__link">Contact</a></li>
-                <li><a href="#" className="header--nav__link">Add Credits</a></li>
+                <li><Link to="#" className="header--nav__link">About</Link></li>
+                <li><Link to="#" className="header--nav__link">Contact</Link></li>
+                <li><Link to="#" className="header--nav__link">Add Credits</Link></li>
                 <li><Link to="/Cart">Cart | 3</Link></li>
                     {/* Number (3) above is placeholder for now. Will update to change with amount of items in cart*/}
             </ul>
