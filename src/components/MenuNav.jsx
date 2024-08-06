@@ -8,7 +8,7 @@ export default function MenuNav() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            if (scrollTop > 825) {
+            if (scrollTop > 650) {
               setIsSticky(true);
             } else {
               setIsSticky(false);
