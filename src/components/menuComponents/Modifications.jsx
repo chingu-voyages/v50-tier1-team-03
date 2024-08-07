@@ -11,7 +11,8 @@ export default function Modifications({selectedItem, item, setItem}){
             }
         })
     }
-    let modifierBtns = selectedItem.modifiers.map(modifier => {
+
+    const modifierBtns = selectedItem.modifiers.map(modifier => {
         return(
         <button
             key={modifier}
