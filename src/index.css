@@ -348,6 +348,7 @@ section {
   margin: 0 auto;
   max-width: 600px;
   background-color: var(--dark-bg);
+  color: var(--main--text__light);
   padding: 4em;
   border: 2px solid var(--main--text__light);
 }
