@@ -19,6 +19,7 @@ export default function MenuItemPage(){
         return item.url === param.itemId
     }
     const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem)|| menu.desserts.find(isItem)
+
     return(
         <main className="menu-item-page">
             {/* Instead of hard-coded values, use props*/}
@@ -28,7 +29,7 @@ export default function MenuItemPage(){
             <p>{menuItem.description}</p>
 
             <Modifications 
-                selectedItem={menuItem} 
+                modifications={menuItem.modifiers} 
                 item={item}
                 setItem={setItem}/>
 
