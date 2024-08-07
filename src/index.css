@@ -62,34 +62,48 @@ a:focus {
 }
 
 /* ======== HEADER STYLES ======== */
-
-.griddle-logo {
-  width: 25px !important;
-  height: 25px !important;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
 .header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 
 .header div {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1em;
 }
 
+.griddle-logo {
+  width: 40% !important;
+  height: auto !important;
+  margin: 0;
+}
 
+.header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.header nav {
+  width: 100%;
+}
 
 .header nav ul {
   display: flex;
   justify-content: space-around;
+}
 
+.header nav span {
+  background-color: var(--dark-bg);
+  color: var(--main--text__light);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2px 6px;
 }
 
 .header--nav__link {
@@ -140,19 +154,33 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: var(--light-bg);
+  border: solid 2px var(--dark-bg);
+  border-radius: 8px;
+  margin-bottom: 32px;
 }
 
 .featured-item h2 {
   font-size: xx-large;
+  margin: 26px 0 8px 0;
+  text-align: center;
+}
+
+.featured-item .divider {
+  height: 2px;
+  width: 90%;
+  background-color: var(--accent-bg);
 }
 
 .featured--item__image {
-  width: 100%;
+  width: 90%;
   max-width: 450px;
   max-height: 450px;
-  border: solid 5px var(--accent-bg);
+  border: solid 8px var(--accent-bg);
   border-radius: 50%;
   box-shadow: var(--box-shadow);
+  margin: 16px 0;
 }
 
 .featured-item .item-description {
@@ -164,6 +192,7 @@ h1 {
 .featured-item h3 {
   font-size: x-large;
   text-align: center;
+  margin: 0 0 12px 0;
 }
 
 .featured-item p {
@@ -388,8 +417,9 @@ section {
 
 @media (min-width: 600px) {
 
-  .header nav ul {
-    gap: 3em;
+  .header div {
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .menu--cards__container {
@@ -467,4 +497,34 @@ section {
      margin-bottom: -2em;
   }
 
+}
+
+@media (min-width: 1200px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .header div {
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .griddle-logo {
+    width: 15% !important;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header nav {
+    margin: 0;
+  }
+
+  .header nav ul {
+    justify-content: flex-end;
+    gap: 3em;
+  }
 }
