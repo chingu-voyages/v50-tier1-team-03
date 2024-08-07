@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 function App() {
 
   const meals = menu.meals.slice(-6)
-  const sides = menu.meals.slice(26,40)
+  const sides = menu.meals.slice(33,40)
   const drinks = menu.drinks.slice(-6,-1)
   const desserts = menu.desserts.slice(0,6)
 
