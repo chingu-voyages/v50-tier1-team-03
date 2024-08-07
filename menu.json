@@ -395,7 +395,7 @@
             ],
             "description": "Savory, slow-roasted pork shoulder is shredded and smothered in a tangy barbecue sauce, then piled high on a soft brioche bun",
             "modifiers": ["Toasted Brioche Bun", "Potato Bun", "Gluten-Free Bun"],
-            "add-ons": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
+            "addOns": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
         },
         {
             "id": 83,
@@ -408,7 +408,7 @@
             ],
             "description": "Ken's succulent Baby Back Ribs are slow-cooked to perfection! Enjoy dry with our house rib rub, or slathered in your favorite BBQ sauce.",
             "modifiers": ["Dry Rub", "Honey BBQ Sauce", "Sweet Asian Chile Sauce", "Ghost Pepper Sauce"],
-            "add-ons": ["Napkins", "Wet Wipes"]
+            "addOns": ["Napkins", "Wet Wipes"]
         },
         {
             "id": 84,
@@ -421,7 +421,7 @@
             ],
             "description": "Juicy, grilled steak, topped with a zesty homemade chimichurri sauce and served on toasted artisanal bread. Add a side of spicy Cajun-style fries!",
             "modifiers": ["Toasted Brioche Bun", "Potato Bun", "Gluten-Free Bun"],
-            "add-ons": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
+            "addOns": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
         },
         {
             "id": 85,
@@ -434,7 +434,7 @@
             ],
             "description": "Micha prefers a pulled pork sandwich without the meat! Try her shredded, barbeque-slathered crimini mushrooms topped with a refreshing cabbage apple slaw.",
             "modifiers": ["Toasted Brioche Bun", "Potato Bun", "Gluten-Free Bun"],
-            "add-ons": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
+            "addOns": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
         },
         {
             "id": 86,
@@ -447,7 +447,7 @@
             ],
             "description": "Radhika's tender chicken is marinated in a yogurt-based marinade with warm spices like garam masala, ginger, garlic, and chili powder, then grilled to perfection.",
             "modifiers": ["Coconut Milk Rice", "Mexican Rice"],
-            "add-ons": ["Steamed Broccoli", "Sauteed Vegatables"]
+            "addOns": ["Steamed Broccoli", "Sauteed Vegatables"]
         },
         {
             "id": 87,
@@ -460,7 +460,7 @@
             ],
             "description": "Sally's smoky grilled tempeh, smothered in tangy barbecue sauce and topped with creamy avocado and a sweet and spicy slaw, all on a toasted sesame bun.",
             "modifiers": ["Toasted Sesame Bun", "Potato Bun", "Gluten-Free Bun"],
-            "add-ons": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
+            "addOns": ["Lettuce", "Pickles", "Tomato", "Jalapeno Peppers", "Caramelized Onions"]
         }
     ],
     "drinks": [
@@ -634,7 +634,7 @@
             ],
             "description": "Your choice of any of our house whiskeys.",
             "modifiers": ["Rye", "Canadian", "Bourbon", "Scotch", "Blended"],
-            "add-ons": ["Double Shot"]
+            "addOns": ["Double Shot"]
         },
         {
             "id": 60,
@@ -647,7 +647,7 @@
             ],
             "description": "A classic cocktail made using one of our many house gins.",
             "modifiers": ["London Dry", "New American", "Plymouth", "Old Tom"],
-            "add-ons": ["Double Shot"]
+            "addOns": ["Double Shot"]
         },
         {
             "id": 61,
@@ -660,7 +660,7 @@
             ],
             "description": "You miss college don't you? A shot of any of our choice house vodkas!",
             "modifiers": ["Corn", "Potato", "American", "Flavored"],
-            "add-ons": ["Double Shot"]
+            "addOns": ["Double Shot"]
         },
         {
             "id": 62,
@@ -673,7 +673,7 @@
             ],
             "description": "Bring out your inner pirate with a shot of any of our house rums.",
             "modifiers": ["White", "Black", "Spiced", "Gold"],
-            "add-ons": ["Double Shot"]
+            "addOns": ["Double Shot"]
         },
         {
             "id": 63,
@@ -686,7 +686,7 @@
             ],
             "description": "No worm included, but don't let that stop you from sampling one of our house tequilas.",
             "modifiers": ["Silver", "Gold", "Reposado", "Anejo"],
-            "add-ons": ["Double Shot"]
+            "addOns": ["Double Shot"]
         },
         {
             "id": 64,

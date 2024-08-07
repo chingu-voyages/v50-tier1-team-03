@@ -1,4 +1,4 @@
-export default function Options(){
+export default function Options({addOns, item, setItem}){
     function handleAddOn(e){
         const newAddOn = e.target.textContent
         if(item.addOns.includes(newAddOn)){
@@ -11,14 +11,21 @@ export default function Options(){
             }
         })
     }
-    
+    const addOnBtns = addOns.map(addOn => {
+        return(
+        <button
+            key={addOn}
+            className="option-btn" 
+            onClick={(e) => handleAddOn(e)}>
+                {addOn}
+        </button>)
+    })
+
     return(
         <div className='options-container'>
             <h4>Add-Ons:</h4>
             <p className="required">Required *</p>
-            <button className="option-btn" onClick={(e) => handleAddOn(e)}>Pickles</button>
-            <button className="option-btn" onClick={(e) => handleAddOn(e)}>Carmalized Onions</button>
-            <button className="option-btn" onClick={(e) => handleAddOn(e)}>Extra Tangy BBQ Sauce</button>
+            {addOnBtns}
         </div>
     )
 }
