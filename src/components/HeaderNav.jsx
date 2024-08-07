@@ -1,6 +1,6 @@
 // Can not render locally with this import. To fix later
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from "react";
+// import React from "react";
 import { Link } from "react-router-dom";
 
 const HeaderNav = () => {
