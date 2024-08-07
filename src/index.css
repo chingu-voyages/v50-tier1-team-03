@@ -359,6 +359,25 @@ section {
   align-items: center;
 }
 
+.cart-btn {
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  margin: 0 0.5em;
+}
+
+.cart-btn:focus,
+.cart-btn:hover {
+  outline: 1px solid var(--main--text__light);
+  outline-offset: 4px;
+}
+
+.cart-btn:active {
+  transform: scale(0.9);
+}
+
 .checkout-el {
   display: flex;
   flex-direction: column;
