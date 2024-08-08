@@ -5,20 +5,27 @@ export default function Cart() {
         <>
             <Header />
             <section className="cart-section">
+                <h2 className="cart-heading">Your Order 🍔</h2>
                 <div className="cart-item">
-                    <h2>Item name <span id="quantity"></span></h2>
-                    <p>$ (Item price)</p>
+                    <h3>Item name <span id="quantity"></span></h3>
+                    <p className="item-price">$ (Item price)</p>
                 </div>
+                <button className="cart-btn">Edit</button>
+                <button className="cart-btn">Remove</button>
                 <div className="cart-item">
-                    <h2>Item name <span id="quantity"></span></h2>
-                    <p>$ (Item price)</p>
+                    <h3>Item name <span id="quantity"></span></h3>
+                    <p className="item-price">$ (Item price)</p>
                 </div>
+                <button className="cart-btn">Edit</button>
+                <button className="cart-btn">Remove</button>
                 <div className="cart-item">
-                    <h2>Item name <span id="quantity"></span></h2>
-                    <p>$ (Item price)</p>
+                    <h3>Item name <span id="quantity"></span></h3>
+                    <p className="item-price">$ (Item price)</p>
                 </div>
+                <button className="cart-btn">Edit</button>
+                <button className="cart-btn">Remove</button>
                 <div className="checkout-el">
-                    <p>Total: <span id="total-el">$50.00</span></p>
+                    <p className="total-el">Total: <span id="total-el">$50.00</span></p>
                     <button className="checkout-btn">Check out</button>
                 </div>
             </section>
