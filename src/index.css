@@ -323,6 +323,7 @@ section {
   margin: 0 auto;
   max-width: 800px;
   background-color: var(--dark-bg);
+  color: var(--main--text__light);
   padding: 2em;
   border: 2px solid var(--main--text__light);
   color: var(--main--text__light)
