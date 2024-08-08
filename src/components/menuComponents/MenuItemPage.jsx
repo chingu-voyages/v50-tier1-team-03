@@ -42,7 +42,7 @@ export default function MenuItemPage(){
             <AmountAddToCart />
             <br />
             <br />
-            <Link to="/home"><button className="menu-return-btn">Return to Menu</button></Link>
+            <Link to="/"><button className="menu-return-btn">Return to Menu</button></Link>
         </main>
     )
 }
