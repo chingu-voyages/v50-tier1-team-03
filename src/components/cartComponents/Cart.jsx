@@ -5,20 +5,21 @@ export default function Cart() {
         <>
             <Header />
             <section className="cart-section">
+                <h2 className="cart-heading">Your Order 🍔</h2>
                 <div className="cart-item">
-                    <h2>Item name <span id="quantity"></span></h2>
+                    <h3>Item name <span id="quantity"></span></h3>
                     <p>$ (Item price)</p>
                 </div>
                 <button className="cart-btn">Edit</button>
                 <button className="cart-btn">Remove</button>
                 <div className="cart-item">
-                    <h2>Item name <span id="quantity"></span></h2>
+                    <h3>Item name <span id="quantity"></span></h3>
                     <p>$ (Item price)</p>
                 </div>
                 <button className="cart-btn">Edit</button>
                 <button className="cart-btn">Remove</button>
                 <div className="cart-item">
-                    <h2>Item name <span id="quantity"></span></h2>
+                    <h3>Item name <span id="quantity"></span></h3>
                     <p>$ (Item price)</p>
                 </div>
                 <button className="cart-btn">Edit</button>

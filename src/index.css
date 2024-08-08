@@ -353,6 +353,11 @@ section {
   border: 2px solid var(--main--text__light);
 }
 
+.cart-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .cart-item {
   display: flex;
   justify-content: space-between;
