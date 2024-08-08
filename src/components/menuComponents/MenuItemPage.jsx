@@ -4,6 +4,7 @@ import menu from "../../../menu.json"
 import Modifications from './Modifications'
 import Options from './Options'
 import AmountAddToCart from './AmountAddToCart'
+import { Link } from "react-router-dom"
 
 // item state- we could raise the item state up one component into the app. that way, 
 // each window does not have it's own state. it's managed in one place.
@@ -39,6 +40,9 @@ export default function MenuItemPage(){
                 setItem={setItem}/>
 
             <AmountAddToCart />
+            <br />
+            <br />
+            <Link to="/"><button className="menu-return-btn">Return to Menu</button></Link>
         </main>
     )
 }
