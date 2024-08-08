@@ -362,6 +362,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid white;
 }
 
 .cart-btn {
@@ -384,6 +385,8 @@ section {
 }
 
 .checkout-el {
+  margin-top: 2em;
+  border-top: 1px solid var(--main--text__light);
   display: flex;
   flex-direction: column;
   align-items: end;

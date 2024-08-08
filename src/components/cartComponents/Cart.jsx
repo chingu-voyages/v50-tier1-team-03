@@ -8,19 +8,19 @@ export default function Cart() {
                 <h2 className="cart-heading">Your Order 🍔</h2>
                 <div className="cart-item">
                     <h3>Item name <span id="quantity"></span></h3>
-                    <p>$ (Item price)</p>
+                    <p className="item-price">$ (Item price)</p>
                 </div>
                 <button className="cart-btn">Edit</button>
                 <button className="cart-btn">Remove</button>
                 <div className="cart-item">
                     <h3>Item name <span id="quantity"></span></h3>
-                    <p>$ (Item price)</p>
+                    <p className="item-price">$ (Item price)</p>
                 </div>
                 <button className="cart-btn">Edit</button>
                 <button className="cart-btn">Remove</button>
                 <div className="cart-item">
                     <h3>Item name <span id="quantity"></span></h3>
-                    <p>$ (Item price)</p>
+                    <p className="item-price">$ (Item price)</p>
                 </div>
                 <button className="cart-btn">Edit</button>
                 <button className="cart-btn">Remove</button>
