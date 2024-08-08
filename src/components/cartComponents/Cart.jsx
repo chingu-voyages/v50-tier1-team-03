@@ -25,7 +25,7 @@ export default function Cart() {
                 <button className="cart-btn">Edit</button>
                 <button className="cart-btn">Remove</button>
                 <div className="checkout-el">
-                    <p>Total: <span id="total-el">$50.00</span></p>
+                    <p className="total-el">Total: <span id="total-el">$50.00</span></p>
                     <button className="checkout-btn">Check out</button>
                 </div>
             </section>

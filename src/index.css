@@ -358,10 +358,19 @@ section {
   text-align: center;
 }
 
+.cart-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
 .cart-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+}
+
+.item-price {
+  margin: 0;
 }
 
 .cart-btn {
@@ -392,8 +401,14 @@ section {
   gap: 2em;
 }
 
+.total-el {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .checkout-btn {
   align-self: center;
+  font-size: 1.25rem;
   font-family: inherit;
   padding: 0.5em 3em;
   background: var(--light-bg);
