@@ -1,10 +1,6 @@
 import { useState } from 'react'
 
 export const useCart = () => {
-    const [cart, setCart] = useState([
-        {
-            amount: 3,
-        },
-    ])
+    const [cart, setCart] = useState([])
     return [cart, setCart]
 }
