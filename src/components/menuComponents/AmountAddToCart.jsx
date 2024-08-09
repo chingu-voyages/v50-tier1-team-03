@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import { useParams } from "react-router-dom"
-import menu from "../../../menu.json"    
-    
+import menu from "../../../menu.json" 
+import { useCart } from "../../CartState"
+
 export default function AmountAddToCart() {
     const [item, setItem] = useState({
         modifications:[], 
         addOns:[],
         amount: 0,
     })
-
+    
+    const [state1, setState1] = useCart()
+    
+    console.log({state1})
     const param = useParams()
 
     function isItem(item){
