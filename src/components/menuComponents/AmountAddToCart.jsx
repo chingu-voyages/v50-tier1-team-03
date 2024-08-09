@@ -2,20 +2,7 @@ import { useState } from 'react'
 import { useParams } from "react-router-dom"
 import menu from "../../../menu.json"    
     
-export default function AmountAddToCart() {
-    const [item, setItem] = useState({
-        modifications:[], 
-        addOns:[],
-        amount: 0,
-    })
-
-    const param = useParams()
-
-    function isItem(item){
-        return item.url === param.itemId
-    }
-
-    const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem) || menu.desserts.find(isItem)
+export default function AmountAddToCart({item, setItem, menuItem}) {
 
     function handleAmountDecrease(){
         if (item.amount === 0){

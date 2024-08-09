@@ -39,7 +39,7 @@ export default function MenuItemPage(){
                 item={item}
                 setItem={setItem}/>
 
-            <AmountAddToCart />
+            <AmountAddToCart item={item} setItem={setItem} menuItem={menuItem}/>
             <br />
             <br />
             <Link to="/"><button className="menu-return-btn">Return to Menu</button></Link>
