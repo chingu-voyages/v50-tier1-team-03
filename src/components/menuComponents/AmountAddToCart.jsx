@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import { useParams } from "react-router-dom"
-import menu from "../../../menu.json"    
-    
+import menu from "../../../menu.json"     
+import { useCart } from "../../CartState"
+
 export default function AmountAddToCart({item, setItem, menuItem}) {
+
+    const [cart, setCart] = useCart()
 
     function handleAmountDecrease(){
         if (item.amount === 0){
@@ -13,6 +16,13 @@ export default function AmountAddToCart({item, setItem, menuItem}) {
 
     function handleAmountIncrease(){
         setItem(prevItem => ({...item, amount: prevItem.amount + 1}))
+    }
+
+    function addToCart(){
+        {/*
+            1. Pass menuItem state to f(n)
+            2. Append item to cart while saving previous cart entries
+            */}
     }
 
     return(

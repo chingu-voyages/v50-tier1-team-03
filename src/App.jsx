@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import Header from "./components/Header.jsx"
 import FeaturedItem from "./components/FeaturedItem.jsx"
 import menu from "../menu.json"
@@ -8,7 +8,14 @@ import MenuNav from "./components/MenuNav.jsx"
 import { Link } from "react-router-dom"
 
 function App() {
-
+  const [cart, setCart] = useState([
+    {
+      amount: 3,
+    },
+    {
+      amount: 2,
+    },
+  ])
   const meals = menu.meals.slice(-6)
   const sides = menu.meals.slice(33,40)
   const drinks = menu.drinks.slice(-6,-1)

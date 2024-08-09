@@ -2,15 +2,18 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "../CartState"
 
 const HeaderNav = () => {
+    const [cart, setCart] = useCart()
+
     return(
         <nav>
             <ul>
                 <li><Link to="#" className="header--nav__link">About</Link></li>
                 <li><Link to="#" className="header--nav__link">Contact</Link></li>
                 <li><Link to="#" className="header--nav__link">Add Credits</Link></li>
-                <li><Link to="/Cart" className="header--nav__link"><span>Cart | 3</span></Link></li>
+                <li><Link to="/Cart" className="header--nav__link">Cart | {cart.length}</Link></li>
                     {/* Number (3) above is placeholder for now. Will update to change with amount of items in cart*/}
             </ul>
         </nav>
