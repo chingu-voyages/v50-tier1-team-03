@@ -1,6 +1,12 @@
 import Header from "../Header"
+import { useCart } from "../../CartState"
 
-export default function Cart() {
+export default function Cart({state}) {
+    
+    const [state1, setState1] = useCart()
+
+    console.log({state1})
+    
     return(
         <>
             <Header />
