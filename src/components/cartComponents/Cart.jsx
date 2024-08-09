@@ -1,7 +1,7 @@
 import Header from "../Header"
 import { useCart } from "../../CartState"
 
-export default function Cart({state}) {
+export default function Cart() {
     
     const [state1, setState1] = useCart()
 
