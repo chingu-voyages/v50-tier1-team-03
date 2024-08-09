@@ -6,7 +6,7 @@ import { useCart } from "../../CartState"
 export default function AmountAddToCart({item, setItem, menuItem}) {
 
     const [cart, setCart] = useCart()
-
+    console.log(cart)
     function handleAmountDecrease(){
         if (item.amount === 0){
             return
@@ -18,7 +18,11 @@ export default function AmountAddToCart({item, setItem, menuItem}) {
         setItem(prevItem => ({...item, amount: prevItem.amount + 1}))
     }
 
-    function addToCart(){
+    function addToCart(newItem){
+        setCart([
+            ...cart,
+            {newItem}
+        ])
         {/*
             1. Pass menuItem state to f(n)
             2. Append item to cart while saving previous cart entries
@@ -38,7 +42,7 @@ export default function AmountAddToCart({item, setItem, menuItem}) {
                       +
                 {/* </div> */}
             </button>
-            <button className="add-to-cart-btn">Add to Cart | ${menuItem.price*item.amount}</button>
+            <button className="add-to-cart-btn" onClick={() => addToCart(item)}>Add to Cart | ${menuItem.price*item.amount}</button>
         </div> 
     )
 }
