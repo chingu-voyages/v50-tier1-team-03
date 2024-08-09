@@ -9,10 +9,9 @@ export default function AmountAddToCart() {
         addOns:[],
         amount: 0,
     })
+
+    const [cart, setCart] = useCart()
     
-    const [state1, setState1] = useCart()
-    
-    console.log({state1})
     const param = useParams()
 
     function isItem(item){
@@ -30,6 +29,13 @@ export default function AmountAddToCart() {
 
     function handleAmountIncrease(){
         setItem(prevItem => ({...item, amount: prevItem.amount + 1}))
+    }
+
+    function addToCart(){
+        {/*
+            1. Pass menuItem state to f(n)
+            2. Append item to cart while saving previous cart entries
+            */}
     }
 
     return(
