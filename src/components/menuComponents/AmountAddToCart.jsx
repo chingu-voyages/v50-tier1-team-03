@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react'
-import { useParams } from "react-router-dom"
-import menu from "../../../menu.json"     
-import { useCart } from "../../CartState"
+import { useEffect } from 'react'
 
 export default function AmountAddToCart({item, setItem, menuItem}) {
 
