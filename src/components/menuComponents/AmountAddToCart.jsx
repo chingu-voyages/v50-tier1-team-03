@@ -15,20 +15,19 @@ export default function AmountAddToCart({item, setItem, menuItem}) {
 }
 
 */
+    /* reuse
+    JSON.parse(localStorage.getItem("cart"))
+    JSON.stringify(currentCart.push(item))
+    */
     function addToCartStorage(){
         const currentCart = JSON.parse(localStorage.getItem("cart"))
         if (currentCart){
-            console.log("true")
-            console.log(currentCart)
-            const updatedCart = JSON.stringify(currentCart.push(item))
-            // currentCart.push(item)
+            const updatedCart = currentCart.concat(item)
             localStorage.setItem("cart", JSON.stringify(updatedCart))
-            // console.log(localStorage.cart)
+            return
         } else{
-            // console.log("false")
             const initialItem = JSON.stringify([item])
             localStorage.setItem("cart", initialItem)
-            console.log(localStorage)
         }
     }
 
