@@ -13,7 +13,7 @@ export default function MenuItemPage(){
         modifications:[], 
         addOns:[],
         amount: 0,
-    })
+    },)
     const param = useParams()
 
     function isItem(item){
