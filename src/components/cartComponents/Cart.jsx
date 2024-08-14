@@ -1,4 +1,5 @@
 import Header from "../Header"
+import { Link } from "react-router-dom"
 
 export default function Cart() {
     function getCartFromStorage(){
@@ -47,7 +48,7 @@ export default function Cart() {
                 {cartItems}
                 <div className="checkout-el">
                     <p className="total-el">Total: <span id="total-el">${finalPrice}</span></p>
-                    <button className="checkout-btn">Check out</button>
+                    <Link to='/checkout'><button className="checkout-btn">Check out</button></Link>
                 </div>
             </section> : <h1>Empty cart.</h1>}
             

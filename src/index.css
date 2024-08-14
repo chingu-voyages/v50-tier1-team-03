@@ -463,6 +463,90 @@ section {
   transform: scale(0.9);
 }
 
+/*========== Checkout Styles ===========*/
+  .checkout-section {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    padding: 0 10px 20px 10px;
+    box-sizing: border-box;
+    border: solid 2px var(--dark-bg);
+  }
+
+  .checkout-section div{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 0;
+  }
+
+  .checkout-section .add-tip{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .add-tip .tip-options {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tip-options .tip-btn{
+    align-self: center;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 0.5em 3em;
+    background: whitesmoke;
+    color: var(--main--text__dark);
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .add-credit {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .add-credit form label {
+    font-weight: bold;
+  }
+
+  .add-credit form input {
+    background: whitesmoke;
+  }
+
+  .add-credit form .credit-input {
+    padding: 5px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .add-credit form .submit-btn{
+    padding: 0.5em 2em;
+    color: var(--main--text__dark);
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+
+  .checkout-btn-final{
+    align-self: center;
+    font-size: 1.25rem;
+    font-family: inherit;
+    padding: 0.5em 3em;
+    background: whitesmoke;
+    color: var(--main--text__dark);
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
 /*======== Media Queries ==========*/
 
 @media (min-width: 600px) {
@@ -545,6 +629,10 @@ section {
      text-align: center;
      width: 100%;
      margin-bottom: -2em;
+  }
+
+  .add-tip .tip-options {
+    flex-direction: row;
   }
 
 }
