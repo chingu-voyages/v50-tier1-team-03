@@ -1,21 +1,35 @@
-import { useState } from 'react'
-import { useParams } from "react-router-dom"
-import menu from "../../../menu.json"    
-    
-export default function AmountAddToCart() {
-    const [item, setItem] = useState({
-        modifications:[], 
-        addOns:[],
-        amount: 0,
-    })
+import { useState, useEffect } from 'react'
 
-    const param = useParams()
+export default function AmountAddToCart({item, setItem, menuItem}) {
+// currently we are saving the item to localstorage as just an item. need to make it an array of items.
+// each item will eventually render
+/* 
+{
+  "cart" : [
+    {
+      "modifications" : [],
+      "addOns" : [],
+      "amount" : 0
+    },
+  ]
+}
 
-    function isItem(item){
-        return item.url === param.itemId
+*/
+    /* reuse
+    JSON.parse(localStorage.getItem("cart"))
+    JSON.stringify(currentCart.push(item))
+    */
+    function addToCartStorage(){
+        const currentCart = JSON.parse(localStorage.getItem("cart"))
+        if (currentCart){
+            const updatedCart = currentCart.concat(item)
+            localStorage.setItem("cart", JSON.stringify(updatedCart))
+            return
+        } else{
+            const initialItem = JSON.stringify([item])
+            localStorage.setItem("cart", initialItem)
+        }
     }
-
-    const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem) || menu.desserts.find(isItem)
 
     function handleAmountDecrease(){
         if (item.amount === 0){
@@ -41,7 +55,7 @@ export default function AmountAddToCart() {
                       +
                 {/* </div> */}
             </button>
-            <button className="add-to-cart-btn">Add to Cart | ${menuItem.price*item.amount}</button>
+            <button className="add-to-cart-btn" onClick={addToCartStorage}>Add to Cart | ${menuItem.price*item.amount}</button>
         </div> 
     )
 }

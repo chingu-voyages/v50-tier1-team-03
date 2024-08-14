@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import Header from "./components/Header.jsx"
 import FeaturedItem from "./components/FeaturedItem.jsx"
 import menu from "../menu.json"

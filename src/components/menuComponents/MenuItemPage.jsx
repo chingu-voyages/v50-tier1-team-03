@@ -9,11 +9,6 @@ import { Link } from "react-router-dom"
 // item state- we could raise the item state up one component into the app. that way, 
 // each window does not have it's own state. it's managed in one place.
 export default function MenuItemPage(){
-    const [item, setItem] = useState({
-        modifications:[], 
-        addOns:[],
-        amount: 0,
-    })
     const param = useParams()
 
     function isItem(item){
@@ -21,6 +16,15 @@ export default function MenuItemPage(){
     }
     const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem)|| menu.desserts.find(isItem)
 
+    const [item, setItem] = useState({
+        modifications:[], 
+        addOns:[],
+        amount: 0,
+        name: menuItem.name,
+        imageURL: menuItem.image,
+        price: menuItem.price
+    },)
+    
     return(
         <main className="menu-item-page">
             {/* Instead of hard-coded values, use props*/}
@@ -39,7 +43,7 @@ export default function MenuItemPage(){
                 item={item}
                 setItem={setItem}/>
 
-            <AmountAddToCart />
+            <AmountAddToCart item={item} setItem={setItem} menuItem={menuItem}/>
             <br />
             <br />
             <Link to="/"><button className="menu-return-btn">Return to Menu</button></Link>
