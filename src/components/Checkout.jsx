@@ -3,6 +3,8 @@ import Footer from "./Footer";
 
 export default function Checkout() {
 
+    let subtotal = 0;
+    let credit = 0;
 
     return (
         <>
@@ -11,22 +13,33 @@ export default function Checkout() {
 
             {/* Display subtotal */}
             <div className="subtotal">
-                
+                <h3>Your subtotal is: ${subtotal}.</h3>
             </div>
 
             {/* Add tip */}
             <div className="add-tip">
-
+                <h3>Would you like to add a tip?</h3>
+                <div className="tip-options">
+                    <button className="tip-btn">None</button>
+                    <button className="tip-btn">10%</button>
+                    <button className="tip-btn">15%</button>
+                    <button className="tip-btn">20%</button>
+                </div>
             </div>
 
             {/* Add credit */}
             <div className="add-credit">
-
+                <h3>Would you like to add credit? Your current credit is: ${credit}.</h3>
+                <form>
+                    <label>Enter credit:</label><br />
+                    <input type="text" /><br />
+                    <input type="submit" value="Add Credit" />
+                </form>
             </div>
             
             {/* Checkout */}
             <div className="checkout-final">
-
+                <button className="checkout-btn-final">Check Out</button>
             </div>
 
         </section> 
