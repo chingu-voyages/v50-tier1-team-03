@@ -1,10 +1,30 @@
 import Header from "../Header"
-import { useCart } from "../../CartState"
 
 export default function Cart() {
-    
-    
-    
+    function getCartFromStorage(){
+        return JSON.parse(localStorage.getItem("cart"))
+    }
+
+    function renderCart(cart){
+        // console.log(cart)
+        cart.map(item => {
+            console.log(item)
+            return (
+            <>
+                <div className="cart-item">
+                    <h3>Item name <span id="quantity"></span></h3>
+                    <p className="item-price">$ (Item price)</p>
+                </div>
+                <button className="cart-btn">Edit</button>
+                <button className="cart-btn">Remove</button>
+            </>
+            )
+        })
+    }
+
+    // const cartItems = renderCart(getCartFromStorage())
+    const cart = getCartFromStorage()
+    renderCart(cart)
     return(
         <>
             <Header />
