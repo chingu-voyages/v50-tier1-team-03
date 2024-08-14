@@ -118,7 +118,7 @@ a:focus {
 
 .menu-nav-container {
   position: relative;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .menu-nav {
