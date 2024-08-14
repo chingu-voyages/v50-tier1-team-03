@@ -4,55 +4,53 @@ export default function Cart() {
     function getCartFromStorage(){
         return JSON.parse(localStorage.getItem("cart"))
     }
-
+    function generateId(){
+        return Math.floor(Math.random() * (99999-1) + 1)
+    }
     function renderCart(cart){
-        // console.log(cart)
-        cart.map(item => {
-            console.log(item)
-            return (
-            <>
-                <div className="cart-item">
-                    <h3>Item name <span id="quantity"></span></h3>
-                    <p className="item-price">$ (Item price)</p>
+        if (cart){
+            const code = cart.map(item => {
+                return (
+                <div key={generateId()}>
+                    <div className="cart-item">
+                        <h3>{item.name}<span id="quantity"></span></h3>
+                        <p className="item-price">${item.price * item.amount}</p>
+                    </div>
+                    <button className="cart-btn">Edit</button>
+                    <button className="cart-btn">Remove</button>
                 </div>
-                <button className="cart-btn">Edit</button>
-                <button className="cart-btn">Remove</button>
-            </>
-            )
-        })
+                )
+            })
+            return code
+        }
     }
 
-    // const cartItems = renderCart(getCartFromStorage())
+    function calculateTotal(cart){
+        if (cart){
+            let total = 0
+            for (let i = 0; i < cart.length; i++){
+                total = total + (cart[i].price * cart[i].amount)
+            }
+            return total
+        }
+    }
+   
     const cart = getCartFromStorage()
-    renderCart(cart)
+    const cartItems = renderCart(getCartFromStorage())
+    const finalPrice = calculateTotal(cart)
+    
     return(
         <>
             <Header />
-            <section className="cart-section">
+            {cart ? <section className="cart-section">
                 <h2 className="cart-heading">Your Order 🍔</h2>
-                <div className="cart-item">
-                    <h3>Item name <span id="quantity"></span></h3>
-                    <p className="item-price">$ (Item price)</p>
-                </div>
-                <button className="cart-btn">Edit</button>
-                <button className="cart-btn">Remove</button>
-                <div className="cart-item">
-                    <h3>Item name <span id="quantity"></span></h3>
-                    <p className="item-price">$ (Item price)</p>
-                </div>
-                <button className="cart-btn">Edit</button>
-                <button className="cart-btn">Remove</button>
-                <div className="cart-item">
-                    <h3>Item name <span id="quantity"></span></h3>
-                    <p className="item-price">$ (Item price)</p>
-                </div>
-                <button className="cart-btn">Edit</button>
-                <button className="cart-btn">Remove</button>
+                {cartItems}
                 <div className="checkout-el">
-                    <p className="total-el">Total: <span id="total-el">$50.00</span></p>
+                    <p className="total-el">Total: <span id="total-el">${finalPrice}</span></p>
                     <button className="checkout-btn">Check out</button>
                 </div>
-            </section>
+            </section> : <h1>Empty cart.</h1>}
+            
         </>
     )
 }
