@@ -547,6 +547,10 @@ section {
     margin-top: 20px;
   }
 
+  .checkout-section .hidden {
+    display: none;
+  }
+
 /*======== Media Queries ==========*/
 
 @media (min-width: 600px) {
