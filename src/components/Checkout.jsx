@@ -33,7 +33,6 @@ export default function Checkout() {
 //Add credit functions
     function addTen() {
         credit += 10;
-        return credit;
     }
     function addTwentyFive() {
         credit += 25;
@@ -88,10 +87,14 @@ export default function Checkout() {
             <div className="add-credit">
                 <h3>Would you like to add credit? Your current credit is: ${credit}.</h3>
                 <div className="credit-options">
-                    <button className="credit-btn" onClick={addTen}>$10</button>
-                    <button className="credit-btn" onClick={addTwentyFive}>$25</button>
-                    <button className="credit-btn" onClick={addFifty}>$50</button>
-                    <button className="credit-btn" onClick={clearCredit}>Clear Credit</button>
+                    <div className="add-credit-btns">
+                        <button className="credit-btn" onClick={addTen}>$10</button>
+                        <button className="credit-btn" onClick={addTwentyFive}>$25</button>
+                        <button className="credit-btn" onClick={addFifty}>$50</button>
+                    </div>
+                    <div className="remove-credit-btns">
+                        <button className="clear-credit-btn" onClick={clearCredit}>Clear Credit</button>
+                    </div>
                 </div>
             </div>
             
