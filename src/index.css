@@ -305,7 +305,11 @@ section {
 
 .footer--icon {
   width: 1.5em;
-  margin-left: 0.5em;
+}
+
+.github--icon {
+  width: 1.5em;
+  padding-left: 0.5em;
 }
 
 .social--links {
@@ -316,6 +320,11 @@ section {
 .footer--note {
   margin-top: 2em;
   font-size: 0.8rem
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
 }
 
 /* ======== Menu Item Page ======== */

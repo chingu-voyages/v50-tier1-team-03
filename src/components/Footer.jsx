@@ -10,7 +10,7 @@ const Footer = () => {
                 <h3>Source Code</h3>
                 <a href="https://github.com/chingu-voyages/v50-tier1-team-03" style={{color: "white"}} target="_blank">
                     Repository Link
-                    <img src={github} alt={""} className="footer--icon"/>
+                    <img src={github} alt={""} className="github--icon"/>
                 </a>
             </div>
             <div className ="footer--link">
