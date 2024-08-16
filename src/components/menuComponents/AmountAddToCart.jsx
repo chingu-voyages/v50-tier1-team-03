@@ -45,15 +45,11 @@ export default function AmountAddToCart({item, setItem, menuItem}) {
     return(
        <div>
             <button className="quantity-btn" onClick={handleAmountDecrease}>
-                {/* <div> */}
-                    -
-                {/* </div>  */}
+                -
             </button>
             <span className="item-amount">{item.amount}</span>
             <button className="quantity-btn" onClick={handleAmountIncrease}>
-                {/* <div> */}
-                      +
-                {/* </div> */}
+                +
             </button>
             <button className="add-to-cart-btn" onClick={addToCartStorage}>Add to Cart | ${menuItem.price*item.amount}</button>
         </div> 

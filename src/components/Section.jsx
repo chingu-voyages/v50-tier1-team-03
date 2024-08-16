@@ -5,7 +5,6 @@ export default function Section({ id, heading, content }) {
             <div className="menu--cards__container">
                 {content}
             </div>
-            {/* menu items */}
         </section>
     )
 }
