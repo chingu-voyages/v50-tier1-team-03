@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Checkout() {
 //Functions to retrieve cart total from storage
@@ -30,6 +30,24 @@ export default function Checkout() {
     const [credit, setCredit] = useState(0);
     const success = document.querySelector('.payment-success');
     const fail = document.querySelector('.payment-fail');
+
+// functions to retrieve/update credit in local storage
+    useEffect(function getCredit(){
+        const currentCredit = JSON.parse(localStorage.getItem("credit"))
+        if (currentCredit){
+            setCredit(currentCredit)
+        }
+    }, [])
+
+    useEffect(function updateLocalStorageCredit(){
+        const currentCredit = localStorage.getItem("credit")
+        if (currentCredit){
+            localStorage.setItem("credit", JSON.stringify(credit))
+            return
+        } else{
+            localStorage.setItem("credit", JSON.stringify(credit))
+        }
+    }, [credit])
 
 //Tip modifier functions
     function tipZero() {
@@ -81,7 +99,7 @@ export default function Checkout() {
         if (total <= credit){
             setTotal((0).toFixed(2));
             success.classList.remove('hidden');
-            localStorage.clear(); //Should find way to clear cart without dumping memory so that credit doesn't get dumped too
+            localStorage.removeItem("cart"); //Should find way to clear cart without dumping memory so that credit doesn't get dumped too
             setCredit(
                 Math.round((credit-total)*100)/100
             );
