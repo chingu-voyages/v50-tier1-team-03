@@ -6,12 +6,11 @@ import twitter from "../assets/twitter.png"
 const Footer = () => {
     return(
         <footer className="footer">
-            {/* <link rel="stylesheet" href="src/index.css"></link> */}
             <div className="footer--link">
                 <h3>Source Code</h3>
                 <a href="https://github.com/chingu-voyages/v50-tier1-team-03" style={{color: "white"}} target="_blank">
                     Repository Link
-                    <img src={github} alt={""} className="footer--icon"/>
+                    <img src={github} alt={""} className="github--icon"/>
                 </a>
             </div>
             <div className ="footer--link">

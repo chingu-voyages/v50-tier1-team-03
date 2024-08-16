@@ -340,7 +340,7 @@
             "id": 34,
             "url": "garlic-bread",
             "name": "Garlic Bread",
-            "price": 2.99,
+            "price": 3.00,
             "image": "https://images.unsplash.com/photo-1573140401552-3fab0b24306f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R2FybGljJTIwQnJlYWR8ZW58MHx8MHx8fDA%3D",
             "category": [
                 "side"
@@ -351,7 +351,7 @@
             "id": 35,
             "url": "onion-rings",
             "name": "Onion Rings",
-            "price": 3.99,
+            "price": 4.00,
             "image": "https://images.unsplash.com/photo-1625938146369-adc83368bda7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8T25pb24lMjBSaW5nc3xlbnwwfHwwfHx8MA%3D%3D",
             "category": [
                 "side"
@@ -361,7 +361,7 @@
             "id": 36,
             "url": "mixed-nuts",
             "name": "Mixed Nuts",
-            "price": 5.49,
+            "price": 5.00,
             "image": "https://images.unsplash.com/photo-1598371623789-44e341c1b6ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWl4ZWQlMjBOdXRzfGVufDB8fDB8fHww",
             "category": [
                 "snack"
@@ -372,7 +372,7 @@
             "id": 37,
             "url": "cheese-platter",
             "name": "Cheese Platter",
-            "price": 8.99,
+            "price": 8.00,
             "image": "https://images.unsplash.com/photo-1553653760-d787a53b4bbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hlZXNlJTIwUGxhdHRlcnxlbnwwfHwwfHx8MA%3D%3D",
             "category": [
                 "appetizer"
@@ -383,7 +383,7 @@
             "id": 38,
             "url": "raw-vegetable",
             "name": "Raw Vegetables",
-            "price": 6.49,
+            "price": 6.00,
             "image": "https://plus.unsplash.com/premium_photo-1672418281793-050e1028ba69?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmF3JTIwdmVnZXRhYmxlJTIwcGxhdGV8ZW58MHx8MHx8fDA%3D",
             "category": [
                 "side"
@@ -394,7 +394,7 @@
             "id": 39,
             "url": "pretzels",
             "name": "Pretzels",
-            "price": 3.79,
+            "price": 4.00,
             "image": "https://images.unsplash.com/photo-1540569222266-a08afebb00b0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UHJldHplbHN8ZW58MHx8MHx8fDA%3D",
             "category": [
                 "snack"
@@ -405,7 +405,7 @@
             "id": 40,
             "url":"bruschetta",
             "name": "Bruschetta",
-            "price": 4.29,
+            "price": 5.00,
             "image": "https://images.unsplash.com/photo-1572695157360-1153aaad020b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnJ1c2NoZXR0YXxlbnwwfHwwfHx8MA%3D%3D",
             "category": [
                 "appetizer"
@@ -426,7 +426,7 @@
             "id": 82,
             "url": "dylans-pulled-pork-sandwich",
             "name": "Dylan's Pulled Pork Sandwich",
-            "price": 10.99,
+            "price": 11.00,
             "image": "https://raw.githubusercontent.com/chingu-voyages/v50-tier1-team-03/development/src/assets/pulled-pork.jpeg",
             "category": [
                 "bbq"
@@ -439,7 +439,7 @@
             "id": 83,
             "url": "kens-favorite-baby-back-ribs",
             "name": "Ken's Favorite Baby Back Ribs",
-            "price": 14.99,
+            "price": 15.00,
             "image": "https://raw.githubusercontent.com/chingu-voyages/v50-tier1-team-03/development/src/assets/baby-back-ribs.png",
             "category": [
                 "bbq"
@@ -452,7 +452,7 @@
             "id": 84,
             "url": "mikes-chimichurri-steak-sandwich",
             "name": "Mike's Chimichurri Steak Sandwich",
-            "price": 12.99,
+            "price": 13.00,
             "image": "https://raw.githubusercontent.com/chingu-voyages/v50-tier1-team-03/development/src/assets/steak-sandwich.png",
             "category": [
                 "bbq"
@@ -465,7 +465,7 @@
             "id": 85,
             "url": "michas-shredded-shroom-sandwich",
             "name": "Micha's Shredded Shroom Sandwich",
-            "price": 9.99,
+            "price": 10.00,
             "image": "https://raw.githubusercontent.com/chingu-voyages/v50-tier1-team-03/development/src/assets/shredded-shroom.png",
             "category": [
                 "bbq"
@@ -478,7 +478,7 @@
             "id": 86,
             "url": "radhikas-grilled-tandoor-chicken",
             "name": "Radhika's Grilled Tandoor Chicken",
-            "price": 12.99,
+            "price": 13.00,
             "image": "https://raw.githubusercontent.com/chingu-voyages/v50-tier1-team-03/development/src/assets/tandoor-chicken.jpg",
             "category": [
                 "bbq"
@@ -491,7 +491,7 @@
             "id": 87,
             "url": "sallys-smoky-bbq-tempeh-sandwich",
             "name": "Sally's Smoky BBQ Tempeh Sandwich",
-            "price": 10.99,
+            "price": 11.00,
             "image": "https://raw.githubusercontent.com/chingu-voyages/v50-tier1-team-03/development/src/assets/bbq-tempeh.png",
             "category": [
                 "bbq"
@@ -665,7 +665,7 @@
             "id": 59,
             "url": "whiskey",
             "name": "Whiskey",
-            "price": 12.99,
+            "price": 6.00,
             "image": "https://plus.unsplash.com/premium_photo-1671647122992-5de89811f4c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2hpc2tleSUyMGdsYXNzfGVufDB8fDB8fHww",
             "categories": [
                 "drink"
@@ -678,7 +678,7 @@
             "id": 60,
             "url": "gin-and-tonic",
             "name": "Gin and Tonic",
-            "price": 8.49,
+            "price": 8.00,
             "image": "https://plus.unsplash.com/premium_photo-1661344277834-bde1f854ec10?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8R2luJTIwYW5kJTIwVG9uaWN8ZW58MHx8MHx8fDA%3D",
             "categories": [
                 "drink"
@@ -691,7 +691,7 @@
             "id": 61,
             "url": "vodka-shot",
             "name": "Vodka Shot",
-            "price": 5.99,
+            "price": 6.00,
             "image": "https://images.unsplash.com/photo-1550985543-f47f38aeee65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFZvZGthJTIwU2hvdHxlbnwwfHwwfHx8MA%3D%3D",
             "categories": [
                 "drink"
@@ -704,7 +704,7 @@
             "id": 62,
             "url": "rum",
             "name": "Rum",
-            "price": 6.49,
+            "price": 6.00,
             "image": "https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJ1bXxlbnwwfHwwfHx8MA%3D%3D",
             "categories": [
                 "drink"
@@ -717,7 +717,7 @@
             "id": 63,
             "url": "tequila",
             "name": "Tequila",
-            "price": 7.49,
+            "price": 6.00,
             "image": "https://images.unsplash.com/photo-1516535794938-6063878f08cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8VGVxdWlsYXxlbnwwfHwwfHx8MA%3D%3D",
             "categories": [
                 "drink"
@@ -741,7 +741,7 @@
             "id": 65,
             "url": "chocolate-cake",
             "name": "Chocolate Cake",
-            "price": 5.99,
+            "price": 6.00,
             "image": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hvY29sYXRlJTIwQ2FrZXxlbnwwfHwwfHx8MA%3D%3D",
             "categories": [
                 "dessert"
@@ -752,7 +752,7 @@
             "id": 66,
             "url": "fruit-salad",
             "name": "Fruit Salad",
-            "price": 4.49,
+            "price": 5.00,
             "image": "https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RnJ1aXQlMjBTYWxhZHxlbnwwfHwwfHx8MA%3D%3D",
             "categories": [
                 "dessert"
@@ -763,7 +763,7 @@
             "id": 67,
             "url": "cheesecake",
             "name": "Cheesecake",
-            "price": 6.49,
+            "price": 6.00,
             "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlZXNlY2FrZSUyMHNsaWNlfGVufDB8fDB8fHww",
             "categories": [
                 "dessert"
@@ -774,7 +774,7 @@
             "id": 68,
             "url": "tiramisu",
             "name": "Tiramisu",
-            "price": 7.99,
+            "price": 7.00,
             "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGlyYW1pc3V8ZW58MHx8MHx8fDA%3D",
             "categories": [
                 "dessert"
@@ -785,7 +785,7 @@
             "id": 69,
             "url": "vegan-brownie",
             "name": "Vegan Brownie",
-            "price": 5.49,
+            "price": 5.00,
             "image": "https://images.unsplash.com/photo-1674316211389-d37bd1ad677b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFZlZ2FuJTIwQnJvd25pZXxlbnwwfHwwfHx8MA%3D%3D",
             "categories": [
                 "dessert"
@@ -796,7 +796,7 @@
             "id": 70,
             "url": "ice-cream-sundae",
             "name": "Ice Cream Sundae",
-            "price": 6.99,
+            "price": 7.00,
             "image": "https://images.unsplash.com/photo-1447195047884-0f014b0d9288?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8SWNlJTIwQ3JlYW0lMjBTdW5kYWV8ZW58MHx8MHx8fDA%3D",
             "categories": [
                 "dessert"

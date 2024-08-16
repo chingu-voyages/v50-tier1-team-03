@@ -102,12 +102,13 @@ a:focus {
   justify-content: space-around;
 }
 
-.header nav span {
+.header nav #cart-button {
   background-color: var(--dark-bg);
   color: var(--main--text__light);
+  font-size: 2rem;
   font-weight: bold;
   border-radius: 8px;
-  padding: 2px 6px;
+  padding: 6px 12px;
 }
 
 .header--nav__link {
@@ -304,7 +305,11 @@ section {
 
 .footer--icon {
   width: 1.5em;
-  margin-left: 0.5em;
+}
+
+.github--icon {
+  width: 1.5em;
+  padding-left: 0.5em;
 }
 
 .social--links {
@@ -315,6 +320,11 @@ section {
 .footer--note {
   margin-top: 2em;
   font-size: 0.8rem
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
 }
 
 /* ======== Menu Item Page ======== */
