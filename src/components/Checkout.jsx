@@ -1,47 +1,72 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Checkout() {
-    
-    let subtotal = 1; //Placeholder until we can carry over the total from the Cart element
-    let tipModifier = 1;
-    let total = subtotal;
-    let credit = 0;
+//Functions to retrieve cart total from storage
+    function getCartFromStorage(){
+        return JSON.parse(localStorage.getItem("cart"))
+    }
+    function calculateTotal(cart){
+        if (cart){
+            let total = 0
+            for (let i = 0; i < cart.length; i++){
+                total = total + (cart[i].price * cart[i].amount)
+            }
+            return total
+        //Makes total $0 if nothing in cart
+        } else {
+            let total = 0;
+            return total;
+        }
+    }
 
+//Checkout page variables
+    const cart = getCartFromStorage();
+    const subtotal = calculateTotal(cart);
+    let tipModifier = 1;
+    const [total, setTotal] = useState(subtotal.toFixed(2));
+    const [credit, setCredit] = useState(0);
     const success = document.querySelector('.payment-success');
     const fail = document.querySelector('.payment-fail');
 
 //Tip modifier functions
     function tipZero() {
         tipModifier = 1;
-        total = subtotal*tipModifier;
+        setTotal((subtotal*tipModifier).toFixed(2));
     }
     function tipTen() {
-        tipModifier = 1.1;
-        total = subtotal*tipModifier;
+        tipModifier = 1.10;
+        setTotal(
+            (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
+        );
     }
     function tipFifteen() {
         tipModifier = 1.15;
-        total = subtotal*tipModifier;
+        setTotal(
+            (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
+        );
     }
     function tipTwenty() {
         tipModifier = 1.2;
-        total = subtotal*tipModifier;
+        setTotal(
+            (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
+        );
     }
 
 //Add credit functions
     function addTen() {
-        credit += 10;
+        setCredit(credit + 10);
     }
     function addTwentyFive() {
-        credit += 25;
+        setCredit(credit + 25);
     }
     function addFifty() {
-        credit += 50;
+        setCredit(credit + 50);
     }
     function clearCredit() {
-        credit = 0;
+        setCredit(0);
     }
 
 //Check balance function
@@ -54,8 +79,12 @@ export default function Checkout() {
         }
 
         if (total <= credit){
-            credit -= total;
+            setTotal((0).toFixed(2));
             success.classList.remove('hidden');
+            localStorage.clear(); //Should find way to clear cart without dumping memory so that credit doesn't get dumped too
+            setCredit(
+                Math.round((credit-total)*100)/100
+            );
         } else {
             fail.classList.remove('hidden');
         }
@@ -68,8 +97,8 @@ export default function Checkout() {
         <section className="checkout-section">
 
             {/* Display subtotal */}
-            <div className="subtotal">
-                <h2>Your subtotal is: ${total}.</h2>
+            <div className="total">
+                <h2>Your total is: ${total}.</h2>
             </div>
 
             {/* Add tip */}
