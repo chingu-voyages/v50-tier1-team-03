@@ -8,7 +8,7 @@ export default function Checkout() {
     const success = document.querySelector('.payment-success');
     const fail = document.querySelector('.payment-fail');
 
-    let subtotal = 0;
+    let subtotal = 2;
     let tip = 0;
 
     let credit = 0;
@@ -18,7 +18,14 @@ export default function Checkout() {
     }
 
     function checkBalance() {
-        if (subtotal >= credit){
+        if (!success.classList.contains('hidden')){
+            success.classList.add('hidden');
+        }
+        if (!fail.classList.contains('hidden')){
+            fail.classList.add('hidden');
+        }
+
+        if (subtotal <= credit){
             credit -= subtotal;
             success.classList.remove('hidden');
         } else {
