@@ -9,6 +9,9 @@ export default function Checkout() {
     let total = subtotal;
     let credit = 0;
 
+    const success = document.querySelector('.payment-success');
+    const fail = document.querySelector('.payment-fail');
+
 //Tip modifier functions
     function tipZero() {
         tipModifier = 1;
@@ -33,9 +36,6 @@ export default function Checkout() {
     }
 
 //Check balance function
-    const success = document.querySelector('.payment-success');
-    const fail = document.querySelector('.payment-fail');
-
     function checkBalance() {
         if (!success.classList.contains('hidden')){
             success.classList.add('hidden');
