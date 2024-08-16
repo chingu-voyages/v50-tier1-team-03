@@ -102,12 +102,13 @@ a:focus {
   justify-content: space-around;
 }
 
-.header nav span {
+.header nav #cart-button {
   background-color: var(--dark-bg);
   color: var(--main--text__light);
+  font-size: 2rem;
   font-weight: bold;
   border-radius: 8px;
-  padding: 2px 6px;
+  padding: 6px 12px;
 }
 
 .header--nav__link {
