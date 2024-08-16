@@ -26,7 +26,7 @@ export default function Checkout() {
     const cart = getCartFromStorage();
     const subtotal = calculateTotal(cart);
     let tipModifier = 1;
-    const [total, setTotal] = useState(subtotal);
+    const [total, setTotal] = useState(subtotal.toFixed(2));
     const [credit, setCredit] = useState(0);
     const success = document.querySelector('.payment-success');
     const fail = document.querySelector('.payment-fail');
@@ -35,46 +35,38 @@ export default function Checkout() {
     function tipZero() {
         tipModifier = 1;
         setTotal((subtotal*tipModifier).toFixed(2));
-        return total;
     }
     function tipTen() {
         tipModifier = 1.10;
         setTotal(
             (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
         );
-        return total;
     }
     function tipFifteen() {
         tipModifier = 1.15;
         setTotal(
             (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
         );
-        return total;
     }
     function tipTwenty() {
         tipModifier = 1.2;
         setTotal(
             (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
         );
-        return total;
     }
 
 //Add credit functions
     function addTen() {
         setCredit(credit + 10);
-        return credit;
     }
     function addTwentyFive() {
         setCredit(credit + 25);
-        return credit;
     }
     function addFifty() {
         setCredit(credit + 50);
-        return credit;
     }
     function clearCredit() {
         setCredit(0);
-        return credit;
     }
 
 //Check balance function
@@ -91,7 +83,7 @@ export default function Checkout() {
             success.classList.remove('hidden');
             localStorage.clear(); //Should find way to clear cart without dumping memory so that credit doesn't get dumped too
             setCredit(
-                (Math.round((credit-total)*100)/100).toFixed(2)
+                Math.round((credit-total)*100)/100
             );
         } else {
             fail.classList.remove('hidden');
