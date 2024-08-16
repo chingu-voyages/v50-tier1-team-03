@@ -74,7 +74,7 @@ export default function Checkout() {
         if (total <= credit){
             credit -= total;
             success.classList.remove('hidden');
-            localStorage.clear();
+            localStorage.clear(); //Should find way to clear cart without dumping memory so that credit doesn't get dumped too
         } else {
             fail.classList.remove('hidden');
         }
