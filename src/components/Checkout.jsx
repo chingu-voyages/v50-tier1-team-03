@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Checkout() {
 //Functions to retrieve cart total from storage
@@ -25,41 +26,55 @@ export default function Checkout() {
     const cart = getCartFromStorage();
     const subtotal = calculateTotal(cart);
     let tipModifier = 1;
-    let total = subtotal;
-    let credit = 0;
+    const [total, setTotal] = useState(subtotal);
+    const [credit, setCredit] = useState(0);
     const success = document.querySelector('.payment-success');
     const fail = document.querySelector('.payment-fail');
 
 //Tip modifier functions
     function tipZero() {
         tipModifier = 1;
-        total = subtotal*tipModifier;
+        setTotal((subtotal*tipModifier).toFixed(2));
+        return total;
     }
     function tipTen() {
-        tipModifier = 1.1;
-        total = subtotal*tipModifier;
+        tipModifier = 1.10;
+        setTotal(
+            (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
+        );
+        return total;
     }
     function tipFifteen() {
         tipModifier = 1.15;
-        total = subtotal*tipModifier;
+        setTotal(
+            (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
+        );
+        return total;
     }
     function tipTwenty() {
         tipModifier = 1.2;
-        total = subtotal*tipModifier;
+        setTotal(
+            (Math.round(subtotal*tipModifier*100)/100).toFixed(2)
+        );
+        return total;
     }
 
 //Add credit functions
     function addTen() {
-        credit += 10;
+        setCredit(credit + 10);
+        return credit;
     }
     function addTwentyFive() {
-        credit += 25;
+        setCredit(credit + 25);
+        return credit;
     }
     function addFifty() {
-        credit += 50;
+        setCredit(credit + 50);
+        return credit;
     }
     function clearCredit() {
-        credit = 0;
+        setCredit(0);
+        return credit;
     }
 
 //Check balance function
@@ -72,9 +87,12 @@ export default function Checkout() {
         }
 
         if (total <= credit){
-            credit -= total;
+            setTotal((0).toFixed(2));
             success.classList.remove('hidden');
             localStorage.clear(); //Should find way to clear cart without dumping memory so that credit doesn't get dumped too
+            setCredit(
+                (Math.round((credit-total)*100)/100).toFixed(2)
+            );
         } else {
             fail.classList.remove('hidden');
         }
