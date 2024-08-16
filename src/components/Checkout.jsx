@@ -147,7 +147,7 @@ export default function Checkout() {
             
             {/* Checkout */}
             <div className="checkout-final">
-                <button className="checkout-btn-final" onClick={checkBalance}>Check Out</button>
+                <button className="checkout-btn-final" onClick={checkBalance} disabled={credit === 0}>Check Out</button>
             </div>
 
                     {/* Hidden in CSS by default*/}
