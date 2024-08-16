@@ -30,9 +30,19 @@ export default function Checkout() {
         total = subtotal*tipModifier;
     }
 
-//Add credit function
-    function addCredit() {
-
+//Add credit functions
+    function addTen() {
+        credit += 10;
+        return credit;
+    }
+    function addTwentyFive() {
+        credit += 25;
+    }
+    function addFifty() {
+        credit += 50;
+    }
+    function clearCredit() {
+        credit = 0;
     }
 
 //Check balance function
@@ -77,11 +87,12 @@ export default function Checkout() {
             {/* Add credit */}
             <div className="add-credit">
                 <h3>Would you like to add credit? Your current credit is: ${credit}.</h3>
-                <form>
-                    <label>Enter credit:</label><br />
-                    <input className="credit-input" type="text" /><br />
-                    <input className="submit-btn" type="submit" value="Add Credit" onClick={addCredit} />
-                </form>
+                <div className="credit-options">
+                    <button className="credit-btn" onClick={addTen}>$10</button>
+                    <button className="credit-btn" onClick={addTwentyFive}>$25</button>
+                    <button className="credit-btn" onClick={addFifty}>$50</button>
+                    <button className="credit-btn" onClick={clearCredit}>Clear Credit</button>
+                </div>
             </div>
             
             {/* Checkout */}
