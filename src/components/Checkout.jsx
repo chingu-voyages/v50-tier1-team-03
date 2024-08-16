@@ -14,6 +14,10 @@ export default function Checkout() {
                 total = total + (cart[i].price * cart[i].amount)
             }
             return total
+        //Makes total $0 if nothing in cart
+        } else {
+            let total = 0;
+            return total;
         }
     }
 
@@ -70,6 +74,7 @@ export default function Checkout() {
         if (total <= credit){
             credit -= total;
             success.classList.remove('hidden');
+            localStorage.clear();
         } else {
             fail.classList.remove('hidden');
         }
@@ -82,8 +87,8 @@ export default function Checkout() {
         <section className="checkout-section">
 
             {/* Display subtotal */}
-            <div className="subtotal">
-                <h2>Your subtotal is: ${total}.</h2>
+            <div className="total">
+                <h2>Your total is: ${total}.</h2>
             </div>
 
             {/* Add tip */}
