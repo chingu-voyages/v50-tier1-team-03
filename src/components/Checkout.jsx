@@ -3,19 +3,38 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 export default function Checkout() {
-
-    // Variables for checkBalance fn
-    const success = document.querySelector('.payment-success');
-    const fail = document.querySelector('.payment-fail');
-
-    let subtotal = 2;
-    let tip = 0;
-
+    
+    let subtotal = 1; //Placeholder until we can carry over the total from the Cart element
+    let tipModifier = 1;
+    let total = subtotal;
     let credit = 0;
 
+//Tip modifier functions
+    function tipZero() {
+        tipModifier = 1;
+        total = subtotal*tipModifier;
+    }
+    function tipTen() {
+        tipModifier = 1.1;
+        total = subtotal*tipModifier;
+    }
+    function tipFifteen() {
+        tipModifier = 1.15;
+        total = subtotal*tipModifier;
+    }
+    function tipTwenty() {
+        tipModifier = 1.2;
+        total = subtotal*tipModifier;
+    }
+
+//Add credit function
     function addCredit() {
 
     }
+
+//Check balance function
+    const success = document.querySelector('.payment-success');
+    const fail = document.querySelector('.payment-fail');
 
     function checkBalance() {
         if (!success.classList.contains('hidden')){
@@ -25,14 +44,15 @@ export default function Checkout() {
             fail.classList.add('hidden');
         }
 
-        if (subtotal <= credit){
-            credit -= subtotal;
+        if (total <= credit){
+            credit -= total;
             success.classList.remove('hidden');
         } else {
             fail.classList.remove('hidden');
         }
     }
 
+//Page build
     return (
         <>
         <Header />
@@ -40,17 +60,17 @@ export default function Checkout() {
 
             {/* Display subtotal */}
             <div className="subtotal">
-                <h2>Your subtotal is: ${subtotal}.</h2>
+                <h2>Your subtotal is: ${total}.</h2>
             </div>
 
             {/* Add tip */}
             <div className="add-tip">
                 <h3>Would you like to add a tip?</h3>
                 <div className="tip-options">
-                    <button className="tip-btn">0%</button>
-                    <button className="tip-btn">10%</button>
-                    <button className="tip-btn">15%</button>
-                    <button className="tip-btn">20%</button>
+                    <button className="tip-btn" onClick={tipZero}>0%</button>
+                    <button className="tip-btn" onClick={tipTen}>10%</button>
+                    <button className="tip-btn" onClick={tipFifteen}>15%</button>
+                    <button className="tip-btn" onClick={tipTwenty}>20%</button>
                 </div>
             </div>
 
