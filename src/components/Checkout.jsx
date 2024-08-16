@@ -3,12 +3,26 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 export default function Checkout() {
-    
-    let subtotal = 1; //Placeholder until we can carry over the total from the Cart element
+//Functions to retrieve cart total from storage
+    function getCartFromStorage(){
+        return JSON.parse(localStorage.getItem("cart"))
+    }
+    function calculateTotal(cart){
+        if (cart){
+            let total = 0
+            for (let i = 0; i < cart.length; i++){
+                total = total + (cart[i].price * cart[i].amount)
+            }
+            return total
+        }
+    }
+
+//Checkout page variables
+    const cart = getCartFromStorage();
+    const subtotal = calculateTotal(cart);
     let tipModifier = 1;
     let total = subtotal;
     let credit = 0;
-
     const success = document.querySelector('.payment-success');
     const fail = document.querySelector('.payment-fail');
 
