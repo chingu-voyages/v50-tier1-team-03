@@ -1,24 +1,41 @@
 import Header from "../Header"
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 export default function Cart() {
+    const [triggerRender, setTriggerRender] = useState(true)
+
     function getCartFromStorage(){
         return JSON.parse(localStorage.getItem("cart"))
     }
     function generateId(){
         return Math.floor(Math.random() * (99999-1) + 1)
     }
+
+    function removeItem(e){
+        console.log(e.target.id)
+        const cart = getCartFromStorage()
+        const newCart = cart.filter(item => {
+            console.log(item.id)
+            return item.id != e.target.id
+        })
+        localStorage.setItem("cart", JSON.stringify(newCart))
+        setTriggerRender(!triggerRender)
+    }
+
     function renderCart(cart){
         if (cart){
             const code = cart.map(item => {
+                const itemKey = item.id
+                console.log(`Item:${item.name}, Key:${itemKey}`)
                 return (
-                <div key={generateId()}>
+                <div key={itemKey}>
                     <div className="cart-item">
                         <h3>{item.name}<span id="quantity"></span></h3>
                         <p className="item-price">${item.price * item.amount}</p>
                     </div>
                     <button className="cart-btn">Edit</button>
-                    <button className="cart-btn">Remove</button>
+                    <button className="cart-btn" id={itemKey} onClick={removeItem}>Remove</button>
                 </div>
                 )
             })
@@ -43,7 +60,7 @@ export default function Cart() {
     return(
         <>
             <Header />
-            {cart ? <section className="cart-section">
+            {cart.length > 0 ? <section className="cart-section">
                 <h2 className="cart-heading">Your Order 🍔</h2>
                 {cartItems}
                 <div className="checkout-el">

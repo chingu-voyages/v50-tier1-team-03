@@ -16,15 +16,22 @@ export default function MenuItemPage(){
     }
     const menuItem = menu.meals.find(isItem) || menu.drinks.find(isItem)|| menu.desserts.find(isItem)
 
+    function generateId(){
+        return Math.floor(Math.random() * (99999-1) + 1)
+    }
+
+    const id = generateId()
+
     const [item, setItem] = useState({
         modifications:[], 
         addOns:[],
         amount: 0,
         name: menuItem.name,
         imageURL: menuItem.image,
-        price: menuItem.price
+        price: menuItem.price,
+        id: id
     },)
-    
+
     return(
         <main className="menu-item-page">
             {/* Instead of hard-coded values, use props*/}
