@@ -1,39 +1,35 @@
-# voyage-tasks
+# Github and Griddle Grill
 
-Your project's `readme` is as important to success as your code. For
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+# Overview
+This app was created for Chingu Voyage 50. It is a simulated restaurant webpage taking data from a menu JSON and displaying various food items. Using local memory, users are able to add these items to a cart and select a credit amount to add in order to make a "purchase".
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point -
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+# Features
+This project includes:
+- Home page/menu
+- A shopping cart that holds data using local storage
+- The ability to remove items from your cart
+- A credit system that allows you to add "money" to make your purchase. Leftover credit is saved between purchases using local storage.
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+# Running the Project
+Live version: https://griddle-and-github-grill.netlify.app/
 
-> Own it & Make it your Own!
+Running project locally:
+1. Clone this project locally
+2. Run `npm install` in your bash/command line
+3. Run `npm run dev` in your bash/command line
+4. Create your ideal takeout order from our BBQ restaurant!
 
-## Team Documents
+# Dependencies
+- React
+- React-DOM
+- React-Router-DOM
 
-You may find these helpful as you work together to organize your project.
-
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
-
-Meeting Agenda templates (located in the `/docs` directory in this repo):
-
-- Meeting - Voyage Kickoff --> ./docs/meeting-voyage_kickoff.docx
-- Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
-- Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
-- Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
+# To-Do List
+1. Credit system independent of checkout page
+2. Updated menu items
+3. About Us section
 
 ## Our Team
-
-Everyone on your team should add their name along with a link to their GitHub
-& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
-your repo access and to practice PR'ing with your team _before_ you start
-coding!
-
 ### Product Owner
 
 - Radhika: [GitHub](https://github.com/goldilocks0164) / [LinkedIn](https://www.linkedin.com/in/radhika-godla-81335166)
@@ -43,15 +39,9 @@ coding!
 - Mike Brindley: [GitHub](https://github.com/mikebrindley) / [LinkedIn](https://www.linkedin.com/in/brindley/)
 - Marie Joseph: [GitHub](https://github.com/mari618) / [LinkedIn](https://www.linkedin.com/in/m-joseph-/)
 
-### UX/UI Designer
-
-- Adrienne Burney: [GitHub](https://github.com/Adrienne-B) / [LinkedIn](https://www.linkedin.com/in/adrienne-burney-ux-ui-designer/)
-
 ### Developers
 
 - Micha Rodriguez: [GitHub](https://github.com/michaella23) / [LinkedIn](https://linkedin.com/in/michaella-rodriguez)
 - Dylan Mullarkey: [GitHub](https://github.com/dylanmullarkey) / [LinkedIn](https://www.linkedin.com/in/dylanmullarkey/)
 - Sally Qiao: [GitHub](https://github.com/QH89) / [LinkedIn](https://www.linkedin.com/in/hui-qiao-17a8a7298/)
 - Ken Ellingsen: [GitHub](https://github.com/ken-ellingsen) / [LinkedIn](https://www.linkedin.com/in/ken-ellingsen/)
-  <!-- - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)-->
-  <!-- - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)--
