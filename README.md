@@ -1,4 +1,4 @@
-**Github and Griddle Grill**
+# Github and Griddle Grill
 
 # Overview
 This app was created for Chingu Voyage 50. It is a simulated restaurant webpage taking data from a menu JSON and displaying various food items. Using local memory, users are able to add these items to a cart and select a credit amount to add in order to make a "purchase".
